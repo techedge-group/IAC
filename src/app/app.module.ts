@@ -7,13 +7,17 @@ import { AppComponent } from './app.component';
 import { ModuleListComponent } from './module-list/module-list.component';
 import { ModuleDetailComponent } from './module-detail/module-detail.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { NavComponent } from './nav/nav.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ModuleListComponent,
     ModuleDetailComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    NavComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
