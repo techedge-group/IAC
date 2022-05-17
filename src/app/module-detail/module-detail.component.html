@@ -1,17 +1,47 @@
-<div class="container mx-auto">
-    <div class="w-full h-12 bg-blue-100">Open a PDF file 
-        <a href="assets/brand/A4.pdf" target="_blank">
-            <button class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 ">
-                example
-            </button>
-        </a>
-        <a href="assets/brand/A4.pdf" download>
-        <button type="button" class="text-blue-700 border border-blue-700 hover:bg-blue-700 hover:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm p-2.5 text-center inline-flex items-center dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:focus:ring-blue-800">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 13l-3 3m0 0l-3-3m3 3V8m0 13a9 9 0 110-18 9 9 0 010 18z"></path></svg>
-        </button>
-        </a>
+<div class="container mx-auto h-screen">
+    <!-- HEADER  -->
+    <div id="header" class="w-full h-1/3">
+        <div class="p-5">
+            <a href="" [routerLink]="['/module-list']">
+                <div class="flex gap-2 text-lightText flex justify-start items-center mb-4">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                    <p class="font-semibold">Volver</p>
+                </div>
+            </a>
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Módulo 1 - Introducción</h5>
+            <p class="mb-3 text-lg font-medium text-mainText">Breve descripción del módulo que vamos a visitar</p>
+            <div class="flex gap-4">
+                <div class="flex justify-start items-center mb-6 text-lightText">
+                    <svg class="w-6 h-6 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg>
+                    <p class="text-md">10 vídeos</p>
+                </div>
+                <div class="flex justify-start items-center mb-6 text-lightText">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                    <p class="text-md">10 documentos</p>
+                </div>
+            </div>
+        </div>
     </div>
-    <iframe width="420" height="315"
-    src="https://www.youtube.com/embed/tgbNymZ7vqY">
-    </iframe>
+     <!-- / HEADER  -->
+    <div id="content" class="h-2/3 p-4 bg-blue-200 border-2 border-lightText shadow rounded-lg">
+        <p class="text-lg font-semibold text-mainText">Documentos</p>
+        <div class="w-full h-12 bg-blue-100">
+            <p>Open a PDF file </p>
+            <p>Open a PDF file </p>
+            <a href="assets/brand/Design-thinking.pdf" target="_blank">
+                <button class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 ">
+                     example
+                </button>
+            </a>
+            <a href="assets/brand/Design-thinking.pdf" download>
+             <button type="button" class="text-blue-700 border border-blue-700 hover:bg-blue-700 hover:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm p-2.5 text-center inline-flex items-center dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:focus:ring-blue-800">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 13l-3 3m0 0l-3-3m3 3V8m0 13a9 9 0 110-18 9 9 0 010 18z"></path></svg>
+             </button>
+            </a>
+        </div>
+         <!-- <iframe width="400" height="315"
+         src="https://www.youtube.com/embed/tgbNymZ7vqY">
+         </iframe> -->
+
+    </div>
 </div>
