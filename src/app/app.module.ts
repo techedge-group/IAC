@@ -9,6 +9,7 @@ import { ModuleDetailComponent } from './module-detail/module-detail.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { NavComponent } from './nav/nav.component';
 import { FooterComponent } from './footer/footer.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { FooterComponent } from './footer/footer.component';
     ModuleDetailComponent,
     PageNotFoundComponent,
     NavComponent,
-    FooterComponent
+    FooterComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -25,7 +27,8 @@ import { FooterComponent } from './footer/footer.component';
     RouterModule.forRoot([
       {path: 'module-list', component: ModuleListComponent},
       {path: 'module-detail', component: ModuleDetailComponent},
-      {path: '', redirectTo: '/module-list', pathMatch: 'full'},
+      {path: 'login', component: LoginComponent},
+      {path: '', redirectTo: '/login', pathMatch: 'full'},
       {path: '**', component: PageNotFoundComponent},
     ]),
   ],
