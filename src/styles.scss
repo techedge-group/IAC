@@ -3,16 +3,17 @@
 @tailwind utilities;
 
 @layer components {
-  .test {
-    @apply h-12 w-12 bg-corp md:bg-secondary xl:bg-test;
-  }
+  
   .m-title {
     @apply mb-2 text-3xl font-bold text-darkText;
+  }
+  .m-subtitle {
+    @apply text-darkText text-xl font-bold;
   }
   .m-description {
     @apply mb-3 text-lg font-medium text-mainText;
   }
-//   .m-assetText {
-//     @apply text-md text-lightText;
-//   }
+  .m-text {
+    @apply mb-3 font-merriweather font-medium text-mainText;
+  }
 }
