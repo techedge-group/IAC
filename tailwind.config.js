@@ -11,6 +11,7 @@ module.exports = {
           darkText: '#1E293B',
           mainText: '#777777',
           lightText: '#94A3B8',
+          gray: '#363839',
         },
         fontFamily: {
           'merriweather': ["'Merriweather'", 'serif']
