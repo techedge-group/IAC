@@ -6,7 +6,9 @@ module.exports = {
        extend: {
         colors: {
           corp: '#A0CE4E',
+          hCorp: '#93C043',
           secondary: '#045B62',
+          hSecondary: '#055359',
           test: '#FF0000',
           darkText: '#1E293B',
           mainText: '#777777',
