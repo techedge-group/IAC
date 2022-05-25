@@ -1,7 +1,37 @@
+// module.exports = {
+//   content: [
+//     "./src/**/*.{html,ts}",
+//   ],
+//   presets: [
+//     require('./esgeo-preset.js'),
+//   ],
+//   theme: {
+//        extend: {
+//         colors: {
+//           corp: '#436EC0',
+//           hCorp: '#3B62AC',
+//           secondary: '#E27B7B',
+//           hSecondary: '#D17171',
+//           darkText: '#1E293B',
+//           mainText: '#777777',
+//           lightText: '#94A3B8',
+//           gray: '#363839',
+//         },
+//         fontFamily: {
+//           'merriweather': ["'Merriweather'", 'serif']
+//         },
+//         height: {
+//           '128': '34rem',
+//         }
+//     },
+//   },
+//   plugins: [],
+// };
 module.exports = {
   content: [
     "./src/**/*.{html,ts}",
   ],
+  // presets: [],
   theme: {
        extend: {
         colors: {

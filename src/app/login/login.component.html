@@ -31,16 +31,17 @@
           <form class="">
             <div class="mb-6">
               <label for="email" class="block mb-2 text-sm font-medium text-white lg:text-mainText">Usuario</label>
-              <input type="email" id="email" class="bg-gray-50 border border-gray-300 text-mainText text-sm rounded-lg focus:ring-hSecondary focus:border-hSecondary block w-full p-2.5" placeholder="name@flowbite.com" required>
+              <input type="email" id="email" class="bg-gray-50 border border-gray-300 text-mainText text-sm rounded-lg focus:ring-hSecondary focus:border-hSecondary block w-full p-2.5">
             </div>
             <div class="mb-6">
               <label for="password" class="block mb-2 text-sm font-medium text-white lg:text-mainText">Contraseña</label>
-              <input type="password" id="password" class="bg-gray-50 border border-gray-300 text-mainText text-sm rounded-lg focus:ring-hSecondary focus:border-hSecondary block w-full p-2.5" required>
+              <input type="password" id="password" class="bg-gray-50 border border-gray-300 text-mainText text-sm rounded-lg focus:ring-hSecondary focus:border-hSecondary block w-full p-2.5">
             </div>
             <div class="w-full flex items-center">
-                <button [routerLink]="['/module-list']" type="submit" class="w-full text-white bg-secondary font-medium rounded-lg text-sm md:w-auto px-12 py-2.5 text-center focus:bg-hSecondary">LOGIN</button>
+                <button (click)="login()" type="submit" class="w-full text-white bg-secondary font-medium rounded-lg text-sm md:w-auto px-12 py-2.5 text-center focus:bg-hSecondary">LOGIN</button>
             </div>
           </form>
       </div>
   </div>
 </section>
+
