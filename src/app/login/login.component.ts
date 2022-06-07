@@ -12,9 +12,12 @@ export class LoginComponent implements OnInit {
   
   inputValue:any;
   userInput:any = [];
+  errorEvent:boolean = false;
+  error:string = 'Por favor, introduce un usuario y contraseña correcto';
   
   
   constructor(public router: Router) { }
+
 
   ngOnInit(): void {
   }
@@ -22,13 +25,10 @@ export class LoginComponent implements OnInit {
   login() {
     this.inputValue = document.getElementsByTagName("input")[0].value;
     this.userInput = this.inputValue.toString();
-    // console.log(this.userInput);
-
-    if(this.userInput.includes('esgeo.com')) {
-      // console.log("TRUE");
+    if(this.userInput.includes('esgeo.com') && this.userInput != '') {
       this.router.navigateByUrl('/module-list');
     } else {
-      // console.log("FALSE");
+      this.errorEvent = true; 
     }
   };
 }

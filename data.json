@@ -1,58 +1,171 @@
-{
-    "modules": [
-            {
-            "title": "Module 1",
-            "description": "Breve descripción del módulo",
-            "resume": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
-            "videoCount": "10",
-            "docsCount": "12",
-            "lessons": [
-                {
-                "title": "Lesson 1 - Intro",    
-                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco",
-                "time": "12 min",    
-                "videoUrl": "https://www.youtube.com/embed/swR-wkrgFv0"   
-                },
-                {
-                "title": "Lesson 2 - Intro",    
-                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco",
-                "time": "12 min",    
-                "videoUrl": "https://www.youtube.com/embed/swR-wkrgFv0"   
-                },
-                {
-                "title": "Lesson 3 - Intro",    
-                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco",
-                "time": "12 min",    
-                "videoUrl": "https://www.youtube.com/embed/swR-wkrgFv0"   
-                }
-            ]
+[
+    {
+    "id": "1",
+    "number": "Session I",
+    "title": "Sostenibilidad Corporativa",
+    "description": "Introducción básica de los conceptos de la sostenibilidad",
+    "resume": "Sesión I: Sostenibilidad corporativa: introducción básica de los conceptos de sostenibilidad, de donde surge el término, las teorías y regulación que lo respalda y las estrategias corporativas para abordar el nuevo paradigma organizacional",
+    "time": "1 hora",
+    "videoCount": "4",
+    "docsCount": "2",
+    "cardImage": "assets/brand/pexels-akil-mazumder-1072824.jpg",
+    "testUrl": "https://forms.gle/EFwLWxwQdkvFJHNw5",
+    "docs": [
+        {
+            "title": "Sesión 1 - Sostenibilidad corporativa - Definiciones",
+            "path" : "assets/docs/session-1/Sesión 1 - Sostenibilidad Corporativa - Definiciones.pdf"
         },
-            {
-            "title": "Module 2",
-            "description": "Breve descripción del módulo",
-            "resume": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
-            "videoCount": "10",
-            "docsCount": "12",
-            "lessons": [
-                {
-                "title": "Lesson 1 - Intro",    
-                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco",
-                "time": "12 min",    
-                "videoUrl": "https://www.youtube.com/embed/swR-wkrgFv0"   
-                },
-                {
-                "title": "Lesson 2 - Intro",    
-                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco",
-                "time": "12 min",    
-                "videoUrl": "https://www.youtube.com/embed/swR-wkrgFv0"   
-                },
-                {
-                "title": "Lesson 3 - Intro",    
-                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco",
-                "time": "12 min",    
-                "videoUrl": "https://www.youtube.com/embed/swR-wkrgFv0"  
-                }
-            ]
+        {
+            "title": "Session 1 - Corporate Sustainability - Definitions",
+            "path" : "assets/docs/session-1/Session 1 - Corporate Sustainability - Definitions.pdf"
+        },
+        {
+            "title": "Sesión 1 - Sostenibilidad corporativa",
+            "path" : "src/assets/docs/session-1/Sesión 1 - Sostenibilidad corporativa.pptx.pdf"
+        },
+        {
+            "title": "Session 1 - Corporate Sustainability",
+            "path" : "src/assets/docs/session-1/Session 1 - Corporate Sustainability.pptx.pdf"
         }
-    ]
-}
+    ],
+    "capsules" : 
+        [
+            {
+            "capsuleId": "1",
+            "capsuleTitle": "Cápsula 1 - Definición de sostenibilidad y teorías",    
+            "capsuleDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco",
+            "capsuleTime": "8:34 minutos",    
+            "capsuleVideo": "https://www.youtube.com/embed/swR-BT82xO9TCsY"
+            },
+            {
+            "capsuleId": "2",
+            "capsuleTitle": "Cápsula 2 - Sostenibilidad ¿por qué?",    
+            "capsuleDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco",
+            "capsuleTime": "10:44 minutos",    
+            "capsuleVideo": "https://www.youtube.com/embed/swR-xNbJtoihEVI"
+            },
+            {
+            "capsuleId": "3",
+            "capsuleTitle": "Cápsula 3 - Regulación sostenibilidad",    
+            "capsuleDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco",
+            "capsuleTime": "10:44 minutos",    
+            "capsuleVideo": "https://www.youtube.com/embed/swR-xNbJtoihEVI"
+            },
+            {
+            "capsuleId": "4",
+            "capsuleTitle": "Cápsula 4 - ESG y el camino a la sostenibilidad",    
+            "capsuleDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco",
+            "capsuleTime": "7:10 minutos",    
+            "capsuleVideo": "https://www.youtube.com/embed/swR-SqC8bJD4klI"
+            }
+        ]
+    
+    
+    },
+    {
+    "id": "2",
+    "number": "Session II",
+    "title": "Medio Ambiente ",
+    "description": "Sostenibilidad ambiental",
+    "resume": "Medio Ambiente: sesión dedicada a la sostenibilidad ambiental de las organizaciones donde se presentarán los grandes retos ambientales y la mejores prácticas de las organizaciones para reducir el impacto ambiental de sus actuaciones.",
+    "time": "1 hora 30 minutos",
+    "videoCount": "10",
+    "docsCount": "12",
+    "cardImage": "assets/brand/pexels-singkham-1108572.jpg",
+    "testUrl": "https://forms.gle/x8imp6XGoH1zZCew7",
+    "docs": [
+        {
+            "title": "Sesión 2 - Definiciones Útiles",
+            "path" : "src/assets/docs/session-2/Sesión 2 - Definiciones útiles.pdf"
+        },
+        {
+            "title": "Session 2 -  Useful Definitions",
+            "path" : "assets/docs/session-2/Session 2 - Useful definitions.pdf"
+        },
+        {
+            "title": "Sesión 2 - Medio Ambiente",
+            "path" : "src/assets/docs/session-2/Sesión 2 - Medio Ambiente.pptx.pdf"
+        },
+        {
+            "title": "Session 2 - Environmental Sustainability",
+            "path" : "src/assets/docs/session-2/Session 2 - Environmental Sustainability.pptx.pdf"
+        }
+    ],
+    "capsules" : 
+        [
+            {
+            "capsuleId": "1",
+            "capsuleTitle": "Cápsula 1 - Introducción",    
+            "capsuleDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco",
+            "capsuleTime": "01:34 minutos",    
+            "capsuleVideo": "https://www.youtube.com/embed/qNdAKIa7JcI"
+            },
+            {
+            "capsuleId": "2",
+            "capsuleTitle": "Cápsula 2 - Cambio Climático",    
+            "capsuleDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco",
+            "capsuleTime": "11:41 minutos",    
+            "capsuleVideo": "https://www.youtube.com/embed/swR-xNbJtoihEVI"
+            },
+            {
+            "capsuleId": "3",
+            "capsuleTitle": "Cápsula 3 - Eficiencia energética y GEI",    
+            "capsuleDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco",
+            "capsuleTime": "09:40 minutos",    
+            "capsuleVideo": "https://www.youtube.com/embed/swR-xNbJtoihEVI"
+            },
+            {
+            "capsuleId": "4",
+            "capsuleTitle": "Cápsula 4 - Neutralidad climática",    
+            "capsuleDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco",
+            "capsuleTime": "10:36 minutos",    
+            "capsuleVideo": "https://www.youtube.com/embed/ugTy0ySiAKw"
+            },
+            {
+            "capsuleId": "5",
+            "capsuleTitle": "Cápsula 5 - Economía Circular",    
+            "capsuleDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco",
+            "capsuleTime": "12:24 minutos",    
+            "capsuleVideo": "https://www.youtube.com/embed/Tvb0fMxVnQw"
+            },
+            {
+            "capsuleId": "6",
+            "capsuleTitle": "Cápsula 6 - Movilidad sostenible",    
+            "capsuleDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco",
+            "capsuleTime": "10:10 minutos",    
+            "capsuleVideo": "https://www.youtube.com/embed/jH4UfuazOFk"
+            },
+            {
+            "capsuleId": "7",
+            "capsuleTitle": "Cápsula 7 - Biodiversidad",    
+            "capsuleDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco",
+            "capsuleTime": "14:17 minutos",    
+            "capsuleVideo": "https://www.youtube.com/embed/8B9onq4gsKg"
+            }
+        ]
+    },
+    {
+    "id": "3",
+    "number": "Session III",
+    "title": "Social ",
+    "description": "Sostenibilidad y personas",
+    "resume": "Social: durante la tercera sesión dialogaremos sobre el impacto social interno y externo de las organizaciones",
+    "time": "1 hora 30 minutos",
+    "videoCount": "10",
+    "docsCount": "12",
+    "cardImage": "assets/brand/pexels-cottonbro-7437489.jpg"
+   
+    },
+    {
+    "id": "4",
+    "number": "Session IV",
+    "title": "Gobernanza",
+    "description": "Ética, Compliance y Gobierno Corporativo",
+    "resume": "Gobernanza: trataremos las características de un gobierno corporativo que permita a las organizaciones centrarse en la creación de valor a largo plazo en lugar de beneficios cortoplacistas.",
+    "time": "1 hora",
+    "videoCount": "10",
+    "docsCount": "12",
+    "cardImage": "assets/brand/pexels-jopwell-2422293.jpg"
+    
+    }
+]

@@ -1,0 +1,247 @@
+ [
+            {
+            "id": "1",
+            "title": "Sesión I: Sostenibilidad Corporativa",
+            "description": "Introducción básica de los conceptos de la sostenibilidad",
+            "resume": "Sostenibilidad corporativa: ofrece una visión general de la sostenibilidad corporativa, de donde surge el término y las estrategias corporativas para abordar el nuevo paradigma organizacional",
+            "time": "1 hora",
+            "videoCount": "10",
+            "docsCount": "12",
+            "lessons": [
+                {
+                "title": "Sostenibilidad corporativa inicios y desarrollo",    
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco",
+                "time": "12 min",    
+                "videoUrl": "https://www.youtube.com/embed/swR-wkrgFv0"
+                },
+                {
+                "title": "Shareholders theory vs. Stakeholder theory",    
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco",
+                "time": "12 min",    
+                "videoUrl": "https://www.youtube.com/embed/swR-wkrgFv0"   
+                },
+                {
+                "title": "Análisis de materialidad",    
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco",
+                "time": "12 min",    
+                "videoUrl": "https://www.youtube.com/embed/swR-wkrgFv0"   
+                },
+                {
+                "title": "Informes de sostenibilidad",    
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco",
+                "time": "12 min",    
+                "videoUrl": "https://www.youtube.com/embed/swR-wkrgFv0"   
+                },
+                {
+                "title": "Regulación europea y nacional",    
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco",
+                "time": "12 min",    
+                "videoUrl": "https://www.youtube.com/embed/swR-wkrgFv0"   
+                },
+                {
+                "title": "Objetivos de Desarrollo Sostenible",    
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco",
+                "time": "12 min",    
+                "videoUrl": "https://www.youtube.com/embed/swR-wkrgFv0"   
+                },
+                {
+                "title": "De la sostenibilidad al ESG",    
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco",
+                "time": "12 min",    
+                "videoUrl": "https://www.youtube.com/embed/swR-wkrgFv0"   
+                }
+            ]
+        },
+            {
+            "title": "Sesión II: Medio Ambiente ",
+            "description": "Sostenibilidad ambiental",
+            "resume": "Medio Ambiente: sesión dedicada a la sostenibilidad ambiental de las organizaciones donde se presentarán los grandes retos ambientales y la mejores prácticas de las organizaciones para reducir el impacto ambiental de sus actuaciones",
+            "time": "1 hora 30 minutos",
+            "videoCount": "10",
+            "docsCount": "12",
+            "lessons": [
+                {
+                "title": "Eficiencia energética",    
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco",
+                "time": "12 min",    
+                "videoUrl": "https://www.youtube.com/embed/swR-wkrgFv0"   
+                },
+                {
+                "title": "Gases de efecto invernadero",    
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco",
+                "time": "12 min",    
+                "videoUrl": "https://www.youtube.com/embed/swR-wkrgFv0"   
+                },
+                {
+                "title": "Huella de Carbono",    
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco",
+                "time": "12 min",    
+                "videoUrl": "https://www.youtube.com/embed/swR-wkrgFv0"  
+                },
+                {
+                "title": "Movilidad Sostenible",    
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco",
+                "time": "12 min",    
+                "videoUrl": "https://www.youtube.com/embed/swR-wkrgFv0"  
+                },
+                {
+                "title": "Economía Circular",    
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco",
+                "time": "12 min",    
+                "videoUrl": "https://www.youtube.com/embed/swR-wkrgFv0"  
+                },
+                {
+                "title": "Capital Natural",    
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco",
+                "time": "12 min",    
+                "videoUrl": "https://www.youtube.com/embed/swR-wkrgFv0"  
+                },
+                {
+                "title": "Biodiversidad",    
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco",
+                "time": "12 min",    
+                "videoUrl": "https://www.youtube.com/embed/swR-wkrgFv0"  
+                }
+            ]
+        },
+        {
+            "title": "Sesión III: Social ",
+            "description": "Sostenibilidad y personas",
+            "resume": "Social: durante la tercera sesión dialogaremos sobre el impacto social interno y externo de las organizaciones",
+            "time": "1 hora 30 minutos",
+            "videoCount": "10",
+            "docsCount": "12",
+            "lessons": [
+                {
+                "title": "Diversidad",    
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco",
+                "time": "12 min",    
+                "videoUrl": "https://www.youtube.com/embed/swR-wkrgFv0"   
+                },
+                {
+                "title": "Conciliación",    
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco",
+                "time": "12 min",    
+                "videoUrl": "https://www.youtube.com/embed/swR-wkrgFv0"   
+                },
+                {
+                "title": "Voluntariado corporativo",    
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco",
+                "time": "12 min",    
+                "videoUrl": "https://www.youtube.com/embed/swR-wkrgFv0"  
+                },
+                {
+                "title": "Inclusión",    
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco",
+                "time": "12 min",    
+                "videoUrl": "https://www.youtube.com/embed/swR-wkrgFv0"  
+                },
+                {
+                "title": "Accesibilidad",    
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco",
+                "time": "12 min",    
+                "videoUrl": "https://www.youtube.com/embed/swR-wkrgFv0"  
+                },
+                {
+                "title": "Capital Natural",    
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco",
+                "time": "12 min",    
+                "videoUrl": "https://www.youtube.com/embed/swR-wkrgFv0"  
+                },
+                {
+                "title": "Derechos Humano",    
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco",
+                "time": "12 min",    
+                "videoUrl": "https://www.youtube.com/embed/swR-wkrgFv0"  
+                },
+                {
+                "title": "Empleo juvenil",    
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco",
+                "time": "12 min",    
+                "videoUrl": "https://www.youtube.com/embed/swR-wkrgFv0"  
+                },
+                {
+                "title": "Formación",    
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco",
+                "time": "12 min",    
+                "videoUrl": "https://www.youtube.com/embed/swR-wkrgFv0"  
+                },
+                {
+                "title": "Brecha salarial",    
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco",
+                "time": "12 min",    
+                "videoUrl": "https://www.youtube.com/embed/swR-wkrgFv0"  
+                },
+                {
+                "title": "Seguridad y Salud Laboral",    
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco",
+                "time": "12 min",    
+                "videoUrl": "https://www.youtube.com/embed/swR-wkrgFv0"  
+                },
+                {
+                "title": "Ciberseguridad",    
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco",
+                "time": "12 min",    
+                "videoUrl": "https://www.youtube.com/embed/swR-wkrgFv0"  
+                },
+                {
+                "title": "Acción social",    
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco",
+                "time": "12 min",    
+                "videoUrl": "https://www.youtube.com/embed/swR-wkrgFv0"  
+                },
+                {
+                "title": "Comunidades locales",    
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco",
+                "time": "12 min",    
+                "videoUrl": "https://www.youtube.com/embed/swR-wkrgFv0"  
+                }
+            ]
+        },
+        {
+            "title": "Sesión IV: Gobernanza",
+            "description": "Ética, Compliance y Gobierno Corporativo",
+            "resume": "Gobernanza: trataremos las características de un gobierno corporativo que permita a las organizaciones centrarse en la creación de valor a largo plazo en lugar de beneficios cortoplacistas.",
+            "time": "1 hora",
+            "videoCount": "10",
+            "docsCount": "12",
+            "lessons": [
+                {
+                "title": "Sistema Gestión de la Ética",    
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco",
+                "time": "12 min",    
+                "videoUrl": "https://www.youtube.com/embed/swR-wkrgFv0"   
+                },
+                {
+                "title": "Política anticorrupción y lucha contra el fraude",    
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco",
+                "time": "12 min",    
+                "videoUrl": "https://www.youtube.com/embed/swR-wkrgFv0"   
+                },
+                {
+                "title": "Transparencia en retribución Consejo de Administración",    
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco",
+                "time": "12 min",    
+                "videoUrl": "https://www.youtube.com/embed/swR-wkrgFv0"  
+                },
+                {
+                "title": "Evaluación Consejo de Administración y comisiones",    
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco",
+                "time": "12 min",    
+                "videoUrl": "https://www.youtube.com/embed/swR-wkrgFv0"  
+                },
+                {
+                "title": "Transparencia fiscal",    
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco",
+                "time": "12 min",    
+                "videoUrl": "https://www.youtube.com/embed/swR-wkrgFv0"  
+                },
+                {
+                "title": "Comunicación accionistas, inversores y asesores de voto",    
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco",
+                "time": "12 min",    
+                "videoUrl": "https://www.youtube.com/embed/swR-wkrgFv0"  
+                }
+            ]
+        }
+]

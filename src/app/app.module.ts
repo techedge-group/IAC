@@ -10,6 +10,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { NavComponent } from './nav/nav.component';
 import { FooterComponent } from './footer/footer.component';
 import { LoginComponent } from './login/login.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { LoginComponent } from './login/login.component';
     PageNotFoundComponent,
     NavComponent,
     FooterComponent,
-    LoginComponent
+    LoginComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
@@ -27,6 +29,7 @@ import { LoginComponent } from './login/login.component';
     RouterModule.forRoot([
       {path: 'module-list', component: ModuleListComponent},
       {path: 'module-detail', component: ModuleDetailComponent},
+      {path: 'sessions/:id', component: ModuleDetailComponent},
       {path: 'login', component: LoginComponent},
       {path: '', redirectTo: '/login', pathMatch: 'full'},
       {path: '**', component: PageNotFoundComponent},

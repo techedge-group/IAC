@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import myData from 'src/assets/mockdata/dummy.json';
+import data from 'data.json';
 
 @Component({
   selector: 'app-module-list',
@@ -7,14 +7,16 @@ import myData from 'src/assets/mockdata/dummy.json';
   styleUrls: ['./module-list.component.scss']
 })
 export class ModuleListComponent implements OnInit {
-
-  modules:any;
+ sessions:any;
+ id:any;
+//  data:any;
 
   constructor() { }
 
   ngOnInit(): void {
-    // this.modules = myData;
-    // console.log(this.modules);
+    this.sessions = data;
+    console.log(this.sessions);
   }
+
 
 }
