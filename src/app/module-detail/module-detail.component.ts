@@ -11,32 +11,31 @@ export class ModuleDetailComponent implements OnInit {
 
   sessions:any;
   session:any;
+  capsules:any;
+  docs:any;
 
   myId:any;
-  s:number = 0;
+  test:any;
+  mySession:any;
 
   constructor(private route: ActivatedRoute) { }
 
   ngOnInit(): void {
-    
     this.sessions = data;
     const routeParams = this.route.snapshot.paramMap;
     const sessionIdFromRoute = Number(routeParams.get('id'));
-    console.log(this.sessions);
     
     
-    this.myId = sessionIdFromRoute;
-    console.log(this.myId);
-    this.s = this.sessions.find((e: number) => e === 2);
-    // this.product = products.find(product => product.id === productIdFromRoute);
-    
-    // this.sessions.forEach((element:any) => {
-    //   this.session = element[1];
-      
-    // });
-    // this.session = this.sessions.find((e: { id: any; }) => e.id === this.myId);
-    console.log("mi sesion", this.session)
-
+    this.myId = sessionIdFromRoute.toString();
+     console.log("MODULE ID",this.myId);
+     console.log("TODAS LAS SESIONES",this.sessions);
+     this.session = this.sessions.filter((e: any) => e.id === this.myId);
+     console.log("SESION CON ID =", this.session);
+     this.capsules = this.session[0].capsules;
+     this.docs = this.session[0].docs;
+     console.log("Capsules",this.capsules);
+     console.log("Docs",this.docs);
   }
+
 
 }

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 import data from 'data.json';
 
 @Component({
@@ -8,15 +9,23 @@ import data from 'data.json';
 })
 export class ModuleListComponent implements OnInit {
  sessions:any;
+//  session:any;
  id:any;
-//  data:any;
+ mySession:any;
+//  data = 10;
+//  toSibblin:string[] = [];
 
-  constructor() { }
+  constructor(private router: ActivatedRoute) { }
 
   ngOnInit(): void {
     this.sessions = data;
-    console.log(this.sessions);
   }
 
+  chechID(session:any) {
+    this.mySession = session;
+    console.log("my session", this.mySession);
+    // this.toSibblin.push(this.mySession);
+    // console.log("TO SIBBLIN", this.toSibblin);
+  }
 
 }

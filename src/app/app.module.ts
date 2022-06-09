@@ -11,6 +11,12 @@ import { NavComponent } from './nav/nav.component';
 import { FooterComponent } from './footer/footer.component';
 import { LoginComponent } from './login/login.component';
 import { ContactComponent } from './contact/contact.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from "@angular/common/http";
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+
 
 @NgModule({
   declarations: [
@@ -21,19 +27,23 @@ import { ContactComponent } from './contact/contact.component';
     NavComponent,
     FooterComponent,
     LoginComponent,
-    ContactComponent
+    ContactComponent,
   ],
   imports: [
     BrowserModule,
+    ReactiveFormsModule,
+    HttpClientModule,
     AppRoutingModule,
+    MatFormFieldModule,
+    MatInputModule,
     RouterModule.forRoot([
       {path: 'module-list', component: ModuleListComponent},
-      {path: 'module-detail', component: ModuleDetailComponent},
-      {path: 'sessions/:id', component: ModuleDetailComponent},
+      {path: 'module-detail/:id', component: ModuleDetailComponent},
       {path: 'login', component: LoginComponent},
       {path: '', redirectTo: '/login', pathMatch: 'full'},
       {path: '**', component: PageNotFoundComponent},
     ]),
+    BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
