@@ -9,23 +9,20 @@ import data from 'data.json';
 })
 export class ModuleListComponent implements OnInit {
  sessions:any;
-//  session:any;
+
  id:any;
  mySession:any;
-//  data = 10;
-//  toSibblin:string[] = [];
+ count:number = 0;
+
 
   constructor(private router: ActivatedRoute) { }
 
   ngOnInit(): void {
     this.sessions = data;
-  }
-
-  chechID(session:any) {
-    this.mySession = session;
-    console.log("my session", this.mySession);
-    // this.toSibblin.push(this.mySession);
-    // console.log("TO SIBBLIN", this.toSibblin);
+    this.count = this.sessions.length;
+    console.log(this.sessions);
+    console.log("COUNT", this.count);
+   
   }
 
 }

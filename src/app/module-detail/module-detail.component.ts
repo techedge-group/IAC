@@ -36,6 +36,4 @@ export class ModuleDetailComponent implements OnInit {
      console.log("Capsules",this.capsules);
      console.log("Docs",this.docs);
   }
-
-
 }

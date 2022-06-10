@@ -8,9 +8,15 @@
         </a>
     </div>
 </div> -->
-  <div class="w-full h-auto bg-corp">
-      <form *ngIf="router.url !== '/login' && router.url !== '/'" class="contact" [formGroup]="form" method="post" (ngSubmit)="onSubmit()">
-          <mat-form-field>
+<div class="container mx-auto bg-white border border-gray-200 mb-24 rounded-xl shadow">
+  <div class="flex p-4 w-full text-center sm:p-8">
+  
+      <form *ngIf="router.url !== '/login' && router.url !== '/'" class="p-8 bg-white w-1/2 flex flex-col justify-start" [formGroup]="form" method="post" (ngSubmit)="onSubmit()">
+        <div class="flex flex-col justify-start items-start text-left">
+            <p class="m-title mb-2">¿Tienes alguna duda?</p>  
+            <p class="m-text">Contacta con nosotros, te responderemos con la mayor brevedad posible</p>  
+        </div>
+        <mat-form-field>
               <mat-label>Name</mat-label>
               <input matInput [formControl]="name" required>
               <mat-error *ngIf="name.invalid">Please enter your name</mat-error>
@@ -21,7 +27,7 @@
                 <mat-error *ngIf="email.invalid">Please enter a valid email</mat-error>
             </mat-form-field>
             <mat-form-field>
-                <mat-label>Message</mat-label>
+                <mat-label>Message</mat-label> 
                 <textarea matInput [formControl]="message" maxlength="256" placeholder="I'm interested in..." required></textarea>
                 <mat-hint align="end"> {{message.value?.length || 0}}/256</mat-hint>
                 <mat-error *ngIf="message.invalid">Please enter a message</mat-error>
@@ -32,6 +38,10 @@
                 <span>{{responseMessage}}</span>
             </div>
         </form>
+        <div class="w-1/2 h-auto bg-contact-img">
+            <!-- <img src="assets/brand/contact.png" alt="" class="w-full h-auto"> -->
+        </div>
     </div>
+</div>
         
         

@@ -7,7 +7,7 @@
     "resume": "Sesión I: Sostenibilidad corporativa: introducción básica de los conceptos de sostenibilidad, de donde surge el término, las teorías y regulación que lo respalda y las estrategias corporativas para abordar el nuevo paradigma organizacional",
     "time": "1 hora",
     "videoCount": "4",
-    "docsCount": "2",
+    "docsCount": "4",
     "cardImage": "assets/brand/pexels-akil-mazumder-1072824.jpg",
     "testUrl": "https://forms.gle/EFwLWxwQdkvFJHNw5",
     "docs": [
@@ -35,21 +35,21 @@
             "capsuleTitle": "Cápsula 1 - Definición de sostenibilidad y teorías",    
             "capsuleDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco",
             "capsuleTime": "8:34 minutos",    
-            "capsuleVideo": "https://www.youtube.com/embed/swR-BT82xO9TCsY"
+            "capsuleVideo": "https://www.youtube.com/embed/WqWlGr10t-g"
             },
             {
             "capsuleId": "2",
             "capsuleTitle": "Cápsula 2 - Sostenibilidad ¿por qué?",    
             "capsuleDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco",
             "capsuleTime": "10:44 minutos",    
-            "capsuleVideo": "https://www.youtube.com/embed/swR-xNbJtoihEVI"
+            "capsuleVideo": "https://www.youtube.com/embed/WqWlGr10t-g"
             },
             {
             "capsuleId": "3",
             "capsuleTitle": "Cápsula 3 - Regulación sostenibilidad",    
             "capsuleDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco",
             "capsuleTime": "10:44 minutos",    
-            "capsuleVideo": "https://www.youtube.com/embed/swR-xNbJtoihEVI"
+            "capsuleVideo": "https://www.youtube.com/embed/WqWlGr10t-g"
             },
             {
             "capsuleId": "4",
@@ -67,8 +67,8 @@
     "description": "Sostenibilidad ambiental",
     "resume": "Medio Ambiente: sesión dedicada a la sostenibilidad ambiental de las organizaciones donde se presentarán los grandes retos ambientales y la mejores prácticas de las organizaciones para reducir el impacto ambiental de sus actuaciones.",
     "time": "1 hora 30 minutos",
-    "videoCount": "10",
-    "docsCount": "12",
+    "videoCount": "7",
+    "docsCount": "4",
     "cardImage": "assets/brand/pexels-singkham-1108572.jpg",
     "testUrl": "https://forms.gle/x8imp6XGoH1zZCew7",
     "docs": [
@@ -96,49 +96,49 @@
             "capsuleTitle": "Cápsula 1 - Introducción",    
             "capsuleDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco",
             "capsuleTime": "01:34 minutos",    
-            "capsuleVideo": "https://www.youtube.com/embed/qNdAKIa7JcI"
+            "capsuleVideo": "https://www.youtube.com/embed/DBXO1xLVp6I"
             },
             {
             "capsuleId": "2",
             "capsuleTitle": "Cápsula 2 - Cambio Climático",    
             "capsuleDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco",
             "capsuleTime": "11:41 minutos",    
-            "capsuleVideo": "https://www.youtube.com/embed/swR-xNbJtoihEVI"
+            "capsuleVideo": "https://www.youtube.com/embed/DBXO1xLVp6I"
             },
             {
             "capsuleId": "3",
             "capsuleTitle": "Cápsula 3 - Eficiencia energética y GEI",    
             "capsuleDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco",
             "capsuleTime": "09:40 minutos",    
-            "capsuleVideo": "https://www.youtube.com/embed/swR-xNbJtoihEVI"
+            "capsuleVideo": "https://www.youtube.com/embed/DBXO1xLVp6I"
             },
             {
             "capsuleId": "4",
             "capsuleTitle": "Cápsula 4 - Neutralidad climática",    
             "capsuleDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco",
             "capsuleTime": "10:36 minutos",    
-            "capsuleVideo": "https://www.youtube.com/embed/ugTy0ySiAKw"
+            "capsuleVideo": "https://www.youtube.com/embed/DBXO1xLVp6I"
             },
             {
             "capsuleId": "5",
             "capsuleTitle": "Cápsula 5 - Economía Circular",    
             "capsuleDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco",
             "capsuleTime": "12:24 minutos",    
-            "capsuleVideo": "https://www.youtube.com/embed/Tvb0fMxVnQw"
+            "capsuleVideo": "https://www.youtube.com/embed/DBXO1xLVp6I"
             },
             {
             "capsuleId": "6",
             "capsuleTitle": "Cápsula 6 - Movilidad sostenible",    
             "capsuleDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco",
             "capsuleTime": "10:10 minutos",    
-            "capsuleVideo": "https://www.youtube.com/embed/jH4UfuazOFk"
+            "capsuleVideo": "https://www.youtube.com/embed/DBXO1xLVp6I"
             },
             {
             "capsuleId": "7",
             "capsuleTitle": "Cápsula 7 - Biodiversidad",    
             "capsuleDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco",
             "capsuleTime": "14:17 minutos",    
-            "capsuleVideo": "https://www.youtube.com/embed/8B9onq4gsKg"
+            "capsuleVideo": "https://www.youtube.com/embed/DBXO1xLVp6I"
             }
         ]
     },
@@ -152,7 +152,6 @@
     "videoCount": "10",
     "docsCount": "12",
     "cardImage": "assets/brand/pexels-cottonbro-7437489.jpg"
-   
     },
     {
     "id": "4",
@@ -164,6 +163,5 @@
     "videoCount": "10",
     "docsCount": "12",
     "cardImage": "assets/brand/pexels-jopwell-2422293.jpg"
-    
     }
 ]

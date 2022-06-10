@@ -50,7 +50,10 @@ module.exports = {
         },
         height: {
           '128': '34rem',
-        }
+        },
+        backgroundImage: {
+          'contact-img': "url(assets/brand/contact.png)",
+        },
     },
   },
   plugins: [],

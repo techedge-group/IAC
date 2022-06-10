@@ -1,3 +1,7 @@
+input:focus, textarea {
+    outline: none !important;
+}
+
 .hidden {
 	display: none
 }
