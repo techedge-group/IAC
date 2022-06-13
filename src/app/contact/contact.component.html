@@ -1,46 +1,33 @@
-<!-- <div *ngIf="router.url !== '/login' && router.url !== '/'" class="p-4 w-full text-center bg-corp rounded-lg shadow-md sm:p-8">
-    <h5 class="mb-2 text-3xl font-bold text-white">¿Necesitas ayuda?</h5>
-    <p class="mb-5 text-base text-gray-700 sm:text-lg">Puedes consultarnos en cualquier momento.</p>
-    <div class="justify-center items-center space-y-4 sm:flex sm:space-y-0 sm:space-x-4">
-        <a href="" class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-secondary rounded-lg hover:shadow-md focus:ring-4 focus:outline-none">
-            Tengo una duda
-            <svg class="ml-2 -mr-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-        </a>
-    </div>
-</div> -->
-<div class="container mx-auto bg-white border border-gray-200 mb-24 rounded-xl shadow">
+
+<div *ngIf="router.url !== '/login' && router.url !== ''" class="container mx-auto border border-gray-200 mb-24 rounded-xl shadow bg-no-repeat bg-cover" style="background-image: url('assets/brand/bg-contact.png');">
   <div class="flex p-4 w-full text-center sm:p-8">
-  
-      <form *ngIf="router.url !== '/login' && router.url !== '/'" class="p-8 bg-white w-1/2 flex flex-col justify-start" [formGroup]="form" method="post" (ngSubmit)="onSubmit()">
-        <div class="flex flex-col justify-start items-start text-left">
-            <p class="m-title mb-2">¿Tienes alguna duda?</p>  
-            <p class="m-text">Contacta con nosotros, te responderemos con la mayor brevedad posible</p>  
+      <form class="p-8 w-1/2 flex flex-col justify-start" [formGroup]="form" method="post" (ngSubmit)="onSubmit()">
+        <div class="flex flex-col justify-start items-start text-left mb-8">
+            <p class="m-title text-white mb-2">¿Tienes alguna duda?</p>  
+            <p class="m-subtitle text-white">Contacta con nosotros, te responderemos con la mayor brevedad posible</p>  
         </div>
-        <mat-form-field>
-              <mat-label>Name</mat-label>
+        <mat-form-field appearance="fill">
+              <mat-label class="text-white">Nombre</mat-label>
               <input matInput [formControl]="name" required>
-              <mat-error *ngIf="name.invalid">Please enter your name</mat-error>
+              <mat-error *ngIf="name.invalid">Por favor, introduzca su nombre</mat-error>
             </mat-form-field>
-            <mat-form-field>
-                <mat-label>Email</mat-label>
-                <input matInput [formControl]="email" placeholder="email@example.com" required>
-                <mat-error *ngIf="email.invalid">Please enter a valid email</mat-error>
+            <mat-form-field appearance="fill">
+                <mat-label class="text-white">Correo</mat-label>
+                <input matInput [formControl]="email" placeholder="email@ejemplo.com" required>
+                <mat-error *ngIf="email.invalid">Por favor, introduzca un correo válido</mat-error>
             </mat-form-field>
-            <mat-form-field>
-                <mat-label>Message</mat-label> 
-                <textarea matInput [formControl]="message" maxlength="256" placeholder="I'm interested in..." required></textarea>
+            <mat-form-field appearance="fill" class="mb-8">
+                <mat-label class="text-white">Message</mat-label> 
+                <textarea matInput [formControl]="message" maxlength="256" placeholder="Estoy interesado en..." required class="text-white"></textarea>
                 <mat-hint align="end"> {{message.value?.length || 0}}/256</mat-hint>
-                <mat-error *ngIf="message.invalid">Please enter a message</mat-error>
+                <mat-error *ngIf="message.invalid">Por favor, introduce un mensaje</mat-error>
             </mat-form-field>
-            <button [disabled]="isLoading" class="bg-secondary py-2 px-4 rounded shadow w-auto  " type="submit">Submit</button>
+            <button [disabled]="isLoading" class="h-14 w-56 items-center py-2 px-3 font-medium text-center text-white bg-corp rounded-lg hover:bg-hCorp" type="submit">Enviar mensaje</button>
             <input [formControl]="honeypot" class="hidden" type="text" />
             <div [ngClass]="!submitted? 'hidden' : 'visible'" class="center-text">
                 <span>{{responseMessage}}</span>
             </div>
         </form>
-        <div class="w-1/2 h-auto bg-contact-img">
-            <!-- <img src="assets/brand/contact.png" alt="" class="w-full h-auto"> -->
-        </div>
     </div>
 </div>
         

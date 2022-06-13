@@ -1,10 +1,34 @@
 [
     {
-    "id": "1",
+        "id": "1",
+        "number": "Introducción",
+        "title": "Introducción al Curso",
+        "description": "El curso básico de principios de la sostenibilidad está diseñado para todos aquellos que quieran acercarse por primera vez al mundo de la sostenibilidad 'ESG'. El módulo proporciona una introducción al concepto ESG (ambiental, social y de gobierno); de dónde viene, cómo conectar las finanzas y la economía real y cuáles son los desarrollos regulatorios a nivel europeo. También ofrece una visión general de las principales iniciativas y su aplicación práctica para generar impactos positivos en la sostenibilidad. Entonces, abordemos su uso con un enfoque específico en la gestión de la cadena de suministro y las herramientas más innovadoras que permiten la intersección entre la estrategia corporativa y la estrategia de sostenibilidad",
+        "resume": "Gobernanza: trataremos las características de un gobierno corporativo que permita a las organizaciones centrarse en la creación de valor a largo plazo en lugar de beneficios cortoplacistas.",
+        "time": "1 hora",
+        "videoCount": "1",
+        "docsCount": "0",
+        "cardImage": "assets/brand/pexels-akil-mazumder-1072824.jpg",
+        "docs": [
+            
+        ],
+        "capsules" : 
+            [
+                {
+                "capsuleId": "1",
+                "capsuleTitle": "Introducción al curso",    
+                "capsuleDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco",
+                "capsuleTime": "9 minutos",    
+                "capsuleVideo": "https://www.youtube.com/embed/AjF7x0YSzTo"
+                }
+            ]
+        },
+    {
+    "id": "2",
     "number": "Sesión I",
     "title": "Sostenibilidad Corporativa",
     "description": "Introducción básica de los conceptos de la sostenibilidad",
-    "resume": "Sostenibilidad corporativa: introducción básica de los conceptos de sostenibilidad, de donde surge el término, las teorías y regulación que lo respalda y las estrategias corporativas para abordar el nuevo paradigma organizacional",
+    "resume": "Introducción básica de los conceptos de sostenibilidad, de donde surge el término, las teorías y regulación que lo respalda y las estrategias corporativas para abordar el nuevo paradigma organizacional",
     "time": "1 hora",
     "videoCount": "4",
     "docsCount": "4",
@@ -12,19 +36,19 @@
     "testUrl": "https://forms.gle/EFwLWxwQdkvFJHNw5",
     "docs": [
         {
-            "title": "Sesión 1 - Sostenibilidad corporativa - Definiciones",
+            "title": "Sostenibilidad corporativa - Definiciones",
             "path" : "assets/docs/session-1/Sesión 1 - Sostenibilidad Corporativa - Definiciones.pdf"
         },
         {
-            "title": "Session 1 - Corporate Sustainability - Definitions",
+            "title": "Corporate Sustainability - Definitions (English)",
             "path" : "assets/docs/session-1/Session 1 - Corporate Sustainability - Definitions.pdf"
         },
         {
-            "title": "Sesión 1 - Sostenibilidad corporativa",
+            "title": "Sostenibilidad corporativa",
             "path" : "src/assets/docs/session-1/Sesión 1 - Sostenibilidad corporativa.pptx.pdf"
         },
         {
-            "title": "Session 1 - Corporate Sustainability",
+            "title": "Corporate Sustainability (English)",
             "path" : "src/assets/docs/session-1/Session 1 - Corporate Sustainability.pptx.pdf"
         }
     ],
@@ -61,11 +85,11 @@
         ]
     },
     {
-    "id": "2",
+    "id": "3",
     "number": "Sesión II",
-    "title": "Medio Ambiente ",
+    "title": "Medio Ambiente",
     "description": "Sostenibilidad ambiental",
-    "resume": "Medio Ambiente: sesión dedicada a la sostenibilidad ambiental de las organizaciones donde se presentarán los grandes retos ambientales y la mejores prácticas de las organizaciones para reducir el impacto ambiental de sus actuaciones.",
+    "resume": "Sesión dedicada a la sostenibilidad ambiental de las organizaciones donde se presentarán los grandes retos ambientales y la mejores prácticas de las organizaciones para reducir el impacto ambiental de sus actuaciones.",
     "time": "1 hora 30 minutos",
     "videoCount": "7",
     "docsCount": "4",
@@ -73,19 +97,19 @@
     "testUrl": "https://forms.gle/x8imp6XGoH1zZCew7",
     "docs": [
         {
-            "title": "Sesión 2 - Definiciones Útiles",
+            "title": "Definiciones Útiles",
             "path" : "src/assets/docs/session-2/Sesión 2 - Definiciones útiles.pdf"
         },
         {
-            "title": "Session 2 -  Useful Definitions",
+            "title": "Useful Definitions (English)",
             "path" : "assets/docs/session-2/Session 2 - Useful definitions.pdf"
         },
         {
-            "title": "Sesión 2 - Medio Ambiente",
+            "title": "Medio Ambiente",
             "path" : "src/assets/docs/session-2/Sesión 2 - Medio Ambiente.pptx.pdf"
         },
         {
-            "title": "Session 2 - Environmental Sustainability",
+            "title": "Environmental Sustainability (English)",
             "path" : "src/assets/docs/session-2/Session 2 - Environmental Sustainability.pptx.pdf"
         }
     ],
@@ -143,7 +167,7 @@
         ]
     },
     {
-    "id": "3",
+    "id": "4",
     "number": "Sesión III",
     "title": "Social ",
     "description": "Sesión dedicada al impacto social interno y externo de las organizaciones",
@@ -155,19 +179,19 @@
     "testUrl": "https://forms.gle/SF3V8ayjdhgDroPPA",
     "docs": [
         {
-            "title": "Sesión 3 - Definiciones",
+            "title": "Definiciones",
             "path" : "src/assets/docs/session-3/Sesión 3 - Definiciones.pdf"
         },
         {
-            "title": "Session 3 -  Useful Definitions",
+            "title": "Useful Definitions (English)",
             "path" : "assets/docs/session-3/Session 3 - Useful definitions.pdf"
         },
         {
-            "title": "Sesión 3 - Social",
+            "title": "Social",
             "path" : "src/assets/docs/session-3/Sesión 3 - Social.pptx.pdf"
         },
         {
-            "title": "Session 3 - Social",
+            "title": "Social (English)",
             "path" : "src/assets/docs/session-3/Session 3 - Social.pptx.pdf"
         }
     ],
@@ -211,14 +235,57 @@
         ]
     },
     {
-    "id": "4",
+    "id": "5",
     "number": "Sesión IV",
     "title": "Gobernanza",
-    "description": "Ética, Compliance y Gobierno Corporativo",
-    "resume": "Gobernanza: trataremos las características de un gobierno corporativo que permita a las organizaciones centrarse en la creación de valor a largo plazo en lugar de beneficios cortoplacistas.",
+    "description": "Características de un gobierno corporativo que permita a las organizaciones centrarse en la creación de valor a largo plazo en lugar de beneficios cortoplacistas",
+    "resume": "Gobernanza: trataremos las características de un gobierno corporativo que permita a las organizaciones centrarse en la creación de valor a largo plazo (EN) lugar de beneficios cortoplacistas.",
     "time": "1 hora",
-    "videoCount": "10",
-    "docsCount": "12",
-    "cardImage": "assets/brand/pexels-jopwell-2422293.jpg"
+    "videoCount": "3",
+    "docsCount": "4",
+    "cardImage": "assets/brand/pexels-jopwell-2422293.jpg",
+    "testUrl": "https://forms.gle/xqYD3XBuLoabkBZe6",
+    "docs": [
+        {
+            "title": "Sesión 4 - Definiciones",
+            "path" : "src/assets/docs/session-4/Sesión 4 - Definiciones útiles.pdf"
+        },
+        {
+            "title": "Session 4 -  Useful Definitions (English)",
+            "path" : "assets/docs/session-3/Session 4 - Useful definitions.pdf"
+        },
+        {
+            "title": "Sesión 4 - Gobernanza",
+            "path" : "src/assets/docs/session-4/Sesión 4 - Gobernanza.pptx.pdf"
+        },
+        {
+            "title": "Session 4 - Governance (English)",
+            "path" : "src/assets/docs/session-4/Session 4 - Governance.pptx.pdf"
+        }
+    ],
+    "capsules" : 
+        [
+            {
+            "capsuleId": "1",
+            "capsuleTitle": "Cápsula 1 - Gobierno Corporativo y ética empresarial ",    
+            "capsuleDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco",
+            "capsuleTime": "17 minutos",    
+            "capsuleVideo": "https://www.youtube.com/embed/_E2x9MiuyXQ"
+            },
+            {
+            "capsuleId": "2",
+            "capsuleTitle": "Cápsula 2 - Derechos Humanos",    
+            "capsuleDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco",
+            "capsuleTime": "12 minutos",    
+            "capsuleVideo": "https://www.youtube.com/embed/Jpj0ZCAB-_0"
+            },
+            {
+            "capsuleId": "3",
+            "capsuleTitle": "Cápsula 3 - Transparencia",    
+            "capsuleDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco",
+            "capsuleTime": "37 minutos",    
+            "capsuleVideo": "https://www.youtube.com/embed/p2utuVq3vvw"
+            }
+        ]
     }
 ]

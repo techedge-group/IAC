@@ -2,26 +2,26 @@
     <!-- HEADER  -->
     <div id="header" class="w-full h-1/5 p-4 lg:w-1/3 lg:pl-8 lg:flex justify-between items-center">
         <div>
-            <a href="" [routerLink]="['/module-list']">
+            <a href="" [routerLink]="['/sessions']">
                 <div class="flex gap-2 text-lightText flex justify-start items-center mb-4">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
-                    <p class="font-semibold">Volver</p>
+                    <p class="">Volver</p>
                 </div>
             </a>
-            <h5 class="m-subtitle text-lightText">{{session[0].number}}</h5>
+            <h5 class="text-lightText mb-2">{{session[0].number}}</h5>
             <h5 class="m-title">{{session[0].title}}</h5>
-            <p class="m-description">{{session[0].resume}}</p>
+            <p class="m-text mb-8">{{session[0].resume}}</p>
             <div class="flex gap-4">
-                <div class="flex justify-start items-center mb-6 text-lightText">
+                <div *ngIf="session[0].videoCount != 0" class="flex justify-start items-center mb-6 text-lightText">
                     <svg class="w-6 h-6 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg>
                     <p class="m-assetText">{{session[0].videoCount}}</p>
                 </div>
-                <div class="flex justify-start items-center mb-6 text-lightText">
+                <div *ngIf="session[0].docsCount != 0" class="flex justify-start items-center mb-6 text-lightText">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
                     <p class="m-assetText">{{session[0].docsCount}}</p>
                 </div>
             </div>
-            <div class="flex justify-start items-start">
+            <div *ngIf="session[0].testUrl" class="flex justify-start items-start">
                 <a href={{session[0].testUrl}} class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-secondary rounded-lg hover:shadow-md focus:ring-4 focus:outline-none">
                     Ir a Test de Evaluación
                     <svg class="ml-2 -mr-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
@@ -30,21 +30,17 @@
         </div>
     </div>
      <!-- / HEADER  -->
-    <div id="content" class="w-full h-auto p-4 bg-white rounded-lg border border-gray-200 shadow-md flex flex-col gap-8 lg:w-2/3 lg:overflow-y-auto lg:h-screen">
-        <div  *ngIf="docs" class="flex flex-col gap-4">
-            <p class="m-subtitle mt-4">Documentación {{docsCount}}</p>
+    <div id="content" class="w-full h-auto p-10 bg-white rounded-lg border border-gray-200 shadow-md flex flex-col gap-8 lg:w-2/3 lg:overflow-y-auto lg:h-screen">
+        <div *ngIf="docs.length != 0" class="flex flex-col gap-4">
+            <p class="m-subtitle mt-4">Documentación ({{docsCount}})</p>
             <div class="grid gap-4 grid-cols-1 md:grid-cols-2">
                 <div *ngFor="let doc of docs">
                    
-                    <a href={{doc.path}} target="_blank"> 
-                        <div class="w-full h-auto bg-white p-3 flex justify-between items-end rounded-lg bg-white rounded-lg border border-gray-200 shadow hover:shadow-md">
+                    <a href={{doc.path}} target="_blank">
+                        <div class="w-full h-auto bg-white p-3 flex justify-between items-center rounded-lg bg-white rounded-lg border border-gray-200 shadow hover:shadow-md">
                             <div>
-                                <p  data-tooltip-target="tooltip-default" class="text-clip overflow-hidden h-6 font-sm font-semibold text-mainText">{{doc.title}}</p>
-                                <p class="text-clip overflow-hidden h-6 font-xs text-lightText">{{doc.title}}</p>
-                                <div id="tooltip-default" role="tooltip" class="inline-block absolute invisible z-10 py-2 px-3 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 transition-opacity duration-300 tooltip">
-                                    {{doc.title}}
-                                    <div class="tooltip-arrow" data-popper-arrow></div>
-                                </div>
+                                <p class="overflow-hidden h-6 font-sm font-medium text-mainText">{{doc.title}}</p>
+                                <p class="text-m-text text overflow-hidden h-6 font-sm text-lightText">{{doc.title}}.pdf</p>
                             </div>
                             <div>
                                 <a href={{doc.path}} download>
@@ -58,15 +54,10 @@
                 </div>    
             </div>
         </div>
-        <!-- lesson resume  -->
-        <div class="w-full h-auto flex flex-col gap-2">
-            <p class="m-subtitle">{{session[0].title}}</p>
-            <p class="m-text">{{session[0].resume}}</p>
-        </div>
         <!-- lesson media  -->
-        <div class="grid grid-rows-2 grid-cols-1 gap-8">
+        <div class="grid grid-rows-1 grid-cols-1 gap-8">
             <!-- CAPSULE  -->
-            <div *ngFor="let capsule of capsules" class="w-full h-auto flex flex-col gap-2 border-t border-lightText pt-12 pb-12">
+            <div *ngFor="let capsule of capsules" class="w-full h-auto flex flex-col gap-2 pt-4 pb-12">
                 <div class="flex flex-col justify-start items-start gap-4 mb-4 md:flex-row md:items-center">
                     <p class="text-darkText text-xl font-bold">{{capsule.capsuleTitle}}</p>
                     <div class="flex text-lightText text-md font-medium gap-1">
@@ -74,10 +65,8 @@
                         <p class="">{{capsule.capsuleTime}}</p>
                     </div>
                 </div>
-                <div class="">
-                    <!-- <iframe id="myIframe" src="{{this.url}}" -->
-                    <iframe id="myIframe" class="e2e-iframe-trusted-src" [src]="capsule.capsuleVideo | youtube"
-                     class="w-full h-52 md:h-96 lg:h-128" >
+                <div class="video-container">
+                    <iframe [src]="capsule.capsuleVideo | youtube" width="560" height="315"  frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
                     </iframe>
                 </div>
             </div>

@@ -26,7 +26,7 @@ export class LoginComponent implements OnInit {
     this.inputValue = document.getElementsByTagName("input")[0].value;
     this.userInput = this.inputValue.toString();
     if(this.userInput.includes('esgeo.com') && this.userInput != '') {
-      this.router.navigateByUrl('/module-list');
+      this.router.navigateByUrl('/sessions');
     } else {
       this.errorEvent = true; 
     }

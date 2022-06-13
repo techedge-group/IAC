@@ -39,8 +39,8 @@ import { YoutubePipe } from './youtube.pipe';
     MatFormFieldModule,
     MatInputModule,
     RouterModule.forRoot([
-      {path: 'module-list', component: ModuleListComponent},
-      {path: 'module-detail/:id', component: ModuleDetailComponent},
+      {path: 'sessions', component: ModuleListComponent},
+      {path: 'session/:id', component: ModuleDetailComponent},
       {path: 'login', component: LoginComponent},
       {path: '', redirectTo: '/login', pathMatch: 'full'},
       {path: '**', component: PageNotFoundComponent},
