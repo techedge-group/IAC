@@ -1,7 +1,6 @@
 <div class="container mx-auto flex flex-col gap-12 h-auto mb-24 mt-4 lg:mt-12 lg:flex-row lg:gap-4">
     <!-- HEADER  -->
     <div id="header" class="w-full h-1/5 p-4 lg:w-1/3 lg:pl-8 lg:flex justify-between items-center">
-        <!-- <p>Account ID: {{ id }}</p> -->
         <div>
             <a href="" [routerLink]="['/module-list']">
                 <div class="flex gap-2 text-lightText flex justify-start items-center mb-4">
@@ -33,7 +32,7 @@
      <!-- / HEADER  -->
     <div id="content" class="w-full h-auto p-4 bg-white rounded-lg border border-gray-200 shadow-md flex flex-col gap-8 lg:w-2/3 lg:overflow-y-auto lg:h-screen">
         <div  *ngIf="docs" class="flex flex-col gap-4">
-            <p class="m-subtitle mt-4">Documentación (2)</p>
+            <p class="m-subtitle mt-4">Documentación {{docsCount}}</p>
             <div class="grid gap-4 grid-cols-1 md:grid-cols-2">
                 <div *ngFor="let doc of docs">
                    
@@ -61,72 +60,27 @@
         </div>
         <!-- lesson resume  -->
         <div class="w-full h-auto flex flex-col gap-2">
-            <p class="m-subtitle">{{session[0].resume}}</p>
+            <p class="m-subtitle">{{session[0].title}}</p>
             <p class="m-text">{{session[0].resume}}</p>
         </div>
         <!-- lesson media  -->
         <div class="grid grid-rows-2 grid-cols-1 gap-8">
             <!-- CAPSULE  -->
             <div *ngFor="let capsule of capsules" class="w-full h-auto flex flex-col gap-2 border-t border-lightText pt-12 pb-12">
-                <div class="flex flex-col justify-start items-start gap-4 md:flex-row md:items-center">
+                <div class="flex flex-col justify-start items-start gap-4 mb-4 md:flex-row md:items-center">
                     <p class="text-darkText text-xl font-bold">{{capsule.capsuleTitle}}</p>
                     <div class="flex text-lightText text-md font-medium gap-1">
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
                         <p class="">{{capsule.capsuleTime}}</p>
                     </div>
                 </div>
-                <p class="m-text">{{capsule.capsuleDescription}}</p>
                 <div class="">
-                    <iframe id="myIframe" src="https://www.youtube.com/embed/DBXO1xLVp6I"
+                    <!-- <iframe id="myIframe" src="{{this.url}}" -->
+                    <iframe id="myIframe" class="e2e-iframe-trusted-src" [src]="capsule.capsuleVideo | youtube"
                      class="w-full h-52 md:h-96 lg:h-128" >
                     </iframe>
                 </div>
             </div>
-            <!-- / CAPSULE  -->
-            <!-- <div class="w-full h-auto flex flex-col gap-2 border-t border-lightText pt-12 pb-12">
-                <div class="flex flex-col justify-start items-start gap-4 md:flex-row md:items-center">
-                    <p class="text-darkText text-xl font-bold">UX Designers rarely do wireframes </p>
-                    <div class="flex text-lightText text-md font-medium gap-1">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                        <p class="">12 minutos</p>
-                    </div>
-                </div>
-                <p class="m-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco </p>
-                <div class="w-full h-full">
-                    <iframe id="myIframe" src="https://www.youtube.com/embed/DBXO1xLVp6I" class="w-full h-52 md:h-96 lg:h-128">
-                    </iframe>
-                </div>
-            </div>
-            <div class="w-full h-auto flex flex-col gap-2 border-t border-lightText pt-12 pb-12">
-                <div class="flex flex-col justify-start items-start gap-4 md:flex-row md:items-center">
-                    <p class="text-darkText text-xl font-bold">Are you making those 5 button design mistakes?</p>
-                    <div class="flex text-lightText text-md font-medium gap-1">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                        <p class=""></p>
-                    </div>
-                </div>
-                <p class="m-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco </p>
-                <div class="w-full h-full">
-                    <iframe id="myIframe" src="https://www.youtube.com/embed/16tRfLZwmrM" class="w-full h-52 md:h-96 lg:h-128">
-                    </iframe>
-                </div>
-            </div>
-            <div class="w-full h-auto flex flex-col gap-2 border-t border-lightText pt-12 pb-12">
-                <div class="flex flex-col justify-start items-start gap-4 md:flex-row md:items-center">
-                    <p class="text-darkText text-xl font-bold">How to learn UX design? University vs courses vs on your own ?</p>
-                    <div class="flex text-lightText text-md font-medium gap-1">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                        <p class="">12 minutos</p>
-                    </div>
-                </div>
-                <p class="m-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco </p>
-                <div class="w-full h-full">
-                    <iframe id="myIframe" src="https://www.youtube.com/embed/swR-wkrgFv0" class="w-full h-52 md:h-96 lg:h-128">
-                    </iframe>
-                </div>
-            </div> -->
         </div>
     </div>
-    <p></p>
-
 </div>

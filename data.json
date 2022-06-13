@@ -1,10 +1,10 @@
 [
     {
     "id": "1",
-    "number": "Session I",
+    "number": "Sesión I",
     "title": "Sostenibilidad Corporativa",
     "description": "Introducción básica de los conceptos de la sostenibilidad",
-    "resume": "Sesión I: Sostenibilidad corporativa: introducción básica de los conceptos de sostenibilidad, de donde surge el término, las teorías y regulación que lo respalda y las estrategias corporativas para abordar el nuevo paradigma organizacional",
+    "resume": "Sostenibilidad corporativa: introducción básica de los conceptos de sostenibilidad, de donde surge el término, las teorías y regulación que lo respalda y las estrategias corporativas para abordar el nuevo paradigma organizacional",
     "time": "1 hora",
     "videoCount": "4",
     "docsCount": "4",
@@ -34,35 +34,35 @@
             "capsuleId": "1",
             "capsuleTitle": "Cápsula 1 - Definición de sostenibilidad y teorías",    
             "capsuleDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco",
-            "capsuleTime": "8:34 minutos",    
-            "capsuleVideo": "https://www.youtube.com/embed/WqWlGr10t-g"
+            "capsuleTime": "9 minutos",    
+            "capsuleVideo": "https://www.youtube.com/embed/BT82xO9TCsY"
             },
             {
             "capsuleId": "2",
             "capsuleTitle": "Cápsula 2 - Sostenibilidad ¿por qué?",    
             "capsuleDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco",
-            "capsuleTime": "10:44 minutos",    
-            "capsuleVideo": "https://www.youtube.com/embed/WqWlGr10t-g"
+            "capsuleTime": "11 minutos",    
+            "capsuleVideo": "https://www.youtube.com/embed/c8mjeClFcFc"
             },
             {
             "capsuleId": "3",
             "capsuleTitle": "Cápsula 3 - Regulación sostenibilidad",    
             "capsuleDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco",
-            "capsuleTime": "10:44 minutos",    
-            "capsuleVideo": "https://www.youtube.com/embed/WqWlGr10t-g"
+            "capsuleTime": "11 minutos",    
+            "capsuleVideo": "https://www.youtube.com/embed/xNbJtoihEVI"
             },
             {
             "capsuleId": "4",
             "capsuleTitle": "Cápsula 4 - ESG y el camino a la sostenibilidad",    
             "capsuleDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco",
-            "capsuleTime": "7:10 minutos",    
-            "capsuleVideo": "https://www.youtube.com/embed/swR-SqC8bJD4klI"
+            "capsuleTime": "8 minutos",    
+            "capsuleVideo": "https://www.youtube.com/embed/SqC8bJD4klI"
             }
         ]
     },
     {
     "id": "2",
-    "number": "Session II",
+    "number": "Sesión II",
     "title": "Medio Ambiente ",
     "description": "Sostenibilidad ambiental",
     "resume": "Medio Ambiente: sesión dedicada a la sostenibilidad ambiental de las organizaciones donde se presentarán los grandes retos ambientales y la mejores prácticas de las organizaciones para reducir el impacto ambiental de sus actuaciones.",
@@ -95,67 +95,124 @@
             "capsuleId": "1",
             "capsuleTitle": "Cápsula 1 - Introducción",    
             "capsuleDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco",
-            "capsuleTime": "01:34 minutos",    
-            "capsuleVideo": "https://www.youtube.com/embed/DBXO1xLVp6I"
+            "capsuleTime": "2 minutos",    
+            "capsuleVideo": "https://www.youtube.com/embed/qNdAKIa7JcI"
             },
             {
             "capsuleId": "2",
             "capsuleTitle": "Cápsula 2 - Cambio Climático",    
             "capsuleDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco",
-            "capsuleTime": "11:41 minutos",    
-            "capsuleVideo": "https://www.youtube.com/embed/DBXO1xLVp6I"
+            "capsuleTime": "12 minutos",    
+            "capsuleVideo": "https://www.youtube.com/embed/sr0CzJKLl98"
             },
             {
             "capsuleId": "3",
             "capsuleTitle": "Cápsula 3 - Eficiencia energética y GEI",    
             "capsuleDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco",
-            "capsuleTime": "09:40 minutos",    
-            "capsuleVideo": "https://www.youtube.com/embed/DBXO1xLVp6I"
+            "capsuleTime": "10 minutos",    
+            "capsuleVideo": "https://www.youtube.com/embed/BKVIsCvNHhs"
             },
             {
             "capsuleId": "4",
             "capsuleTitle": "Cápsula 4 - Neutralidad climática",    
             "capsuleDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco",
-            "capsuleTime": "10:36 minutos",    
-            "capsuleVideo": "https://www.youtube.com/embed/DBXO1xLVp6I"
+            "capsuleTime": "11 minutos",    
+            "capsuleVideo": "https://www.youtube.com/embed/ugTy0ySiAKw"
             },
             {
             "capsuleId": "5",
             "capsuleTitle": "Cápsula 5 - Economía Circular",    
             "capsuleDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco",
-            "capsuleTime": "12:24 minutos",    
-            "capsuleVideo": "https://www.youtube.com/embed/DBXO1xLVp6I"
+            "capsuleTime": "13 minutos",    
+            "capsuleVideo": "https://www.youtube.com/embed/Tvb0fMxVnQw"
             },
             {
             "capsuleId": "6",
             "capsuleTitle": "Cápsula 6 - Movilidad sostenible",    
             "capsuleDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco",
-            "capsuleTime": "10:10 minutos",    
-            "capsuleVideo": "https://www.youtube.com/embed/DBXO1xLVp6I"
+            "capsuleTime": "11 minutos",    
+            "capsuleVideo": "https://www.youtube.com/embed/jH4UfuazOFk"
             },
             {
             "capsuleId": "7",
             "capsuleTitle": "Cápsula 7 - Biodiversidad",    
             "capsuleDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco",
-            "capsuleTime": "14:17 minutos",    
-            "capsuleVideo": "https://www.youtube.com/embed/DBXO1xLVp6I"
+            "capsuleTime": "15 minutos",    
+            "capsuleVideo": "https://www.youtube.com/embed/8B9onq4gsKg"
             }
         ]
     },
     {
     "id": "3",
-    "number": "Session III",
+    "number": "Sesión III",
     "title": "Social ",
-    "description": "Sostenibilidad y personas",
-    "resume": "Social: durante la tercera sesión dialogaremos sobre el impacto social interno y externo de las organizaciones",
+    "description": "Sesión dedicada al impacto social interno y externo de las organizaciones",
+    "resume": "Social: Sesión dedicada al impacto social interno y externo de las organizaciones",
     "time": "1 hora 30 minutos",
-    "videoCount": "10",
-    "docsCount": "12",
-    "cardImage": "assets/brand/pexels-cottonbro-7437489.jpg"
+    "videoCount": "5",
+    "docsCount": "4",
+    "cardImage": "assets/brand/pexels-cottonbro-7437489.jpg",
+    "testUrl": "https://forms.gle/SF3V8ayjdhgDroPPA",
+    "docs": [
+        {
+            "title": "Sesión 3 - Definiciones",
+            "path" : "src/assets/docs/session-3/Sesión 3 - Definiciones.pdf"
+        },
+        {
+            "title": "Session 3 -  Useful Definitions",
+            "path" : "assets/docs/session-3/Session 3 - Useful definitions.pdf"
+        },
+        {
+            "title": "Sesión 3 - Social",
+            "path" : "src/assets/docs/session-3/Sesión 3 - Social.pptx.pdf"
+        },
+        {
+            "title": "Session 3 - Social",
+            "path" : "src/assets/docs/session-3/Session 3 - Social.pptx.pdf"
+        }
+    ],
+    "capsules" : 
+        [
+            {
+            "capsuleId": "1",
+            "capsuleTitle": "Cápsula 1 - Introducción",    
+            "capsuleDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco",
+            "capsuleTime": "3 minutos",    
+            "capsuleVideo": "https://www.youtube.com/embed/6DtUaooXYEQ"
+            },
+            {
+            "capsuleId": "2",
+            "capsuleTitle": "Cápsula 2 - Diversidad Equidad e Inclusión",    
+            "capsuleDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco",
+            "capsuleTime": "18 minutos",    
+            "capsuleVideo": "https://www.youtube.com/embed/gvGXI7qc3Mw"
+            },
+            {
+            "capsuleId": "3",
+            "capsuleTitle": "Cápsula 3 - Brecha salarial y conciliación",    
+            "capsuleDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco",
+            "capsuleTime": "18 minutos",    
+            "capsuleVideo": "https://www.youtube.com/embed/sQJ2p-J40rE"
+            },
+            {
+            "capsuleId": "4",
+            "capsuleTitle": "Cápsula 4 - Voluntariado corporativo, empleo juvenil y formación",    
+            "capsuleDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco",
+            "capsuleTime": "17 minutos",    
+            "capsuleVideo": "https://www.youtube.com/embed/xYfgHJwXW2w"
+            },
+            {
+            "capsuleId": "5",
+            "capsuleTitle": "Cápsula 5 - Bienestar laboral y acción social",    
+            "capsuleDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco",
+            "capsuleTime": "16 minutos",    
+            "capsuleVideo": "https://www.youtube.com/embed/EtiF86R5kJc"
+            }
+        ]
     },
     {
     "id": "4",
-    "number": "Session IV",
+    "number": "Sesión IV",
     "title": "Gobernanza",
     "description": "Ética, Compliance y Gobierno Corporativo",
     "resume": "Gobernanza: trataremos las características de un gobierno corporativo que permita a las organizaciones centrarse en la creación de valor a largo plazo en lugar de beneficios cortoplacistas.",

@@ -39,7 +39,7 @@ import { HttpClient } from '@angular/common/http';
         formData.append("message", this.form.get("message")?.value);
         this.isLoading = true; // sending the post request async so it's in progress
         this.submitted = false; // hide the response message on multiple submits
-        this.http.post("https://script.google.com/macros/s/AKfycbxXCxnFBSQTqe8_uH1iY2Ammih7PlvV6dw3Y1n6WmtFAnJUcsuS/exec", formData).subscribe(
+        this.http.post("https://script.google.com/a/techedgegroup.com/macros/s/AKfycbxtUiYTAt1OER4_Qm2gfMzdo4bFt1pfGCn0SqTO/exec", formData).subscribe(
           (response:any) => {
             // choose the response message
             if (response["result"] == "success") {

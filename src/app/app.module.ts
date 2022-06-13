@@ -16,6 +16,7 @@ import { HttpClientModule } from "@angular/common/http";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
+import { YoutubePipe } from './youtube.pipe';
 
 
 @NgModule({
@@ -28,6 +29,7 @@ import { MatInputModule } from '@angular/material/input';
     FooterComponent,
     LoginComponent,
     ContactComponent,
+    YoutubePipe,
   ],
   imports: [
     BrowserModule,
