@@ -20,8 +20,6 @@ export class ModuleListComponent implements OnInit {
   ngOnInit(): void {
     this.sessions = data;
     this.count = this.sessions.length;
-    console.log(this.sessions);
-    console.log("COUNT", this.count);
    
   }
 

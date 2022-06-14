@@ -9,7 +9,6 @@ export class YoutubePipe implements PipeTransform {
   constructor(private dom: DomSanitizer) {}
 
   transform(value: string, ...args: unknown[]): unknown {
-    console.log(value);
     return this.dom.bypassSecurityTrustResourceUrl(value);
   }
 
