@@ -1,24 +1,23 @@
 [
     {
         "id": "1",
-        "number": "Introducción",
+        "number": "Sesión 0",
         "title": "Introducción al Curso",
         "description": "El curso básico de principios de la sostenibilidad está diseñado para todos aquellos que quieran acercarse por primera vez al mundo de la sostenibilidad 'ESG'. El módulo proporciona una introducción al concepto ESG (ambiental, social y de gobierno); de dónde viene, cómo conectar las finanzas y la economía real y cuáles son los desarrollos regulatorios a nivel europeo. También ofrece una visión general de las principales iniciativas y su aplicación práctica para generar impactos positivos en la sostenibilidad. Entonces, abordemos su uso con un enfoque específico en la gestión de la cadena de suministro y las herramientas más innovadoras que permiten la intersección entre la estrategia corporativa y la estrategia de sostenibilidad",
-        "resume": "Gobernanza: trataremos las características de un gobierno corporativo que permita a las organizaciones centrarse en la creación de valor a largo plazo en lugar de beneficios cortoplacistas.",
-        "time": "1 hora",
+        "resume": "El curso básico de principios de la sostenibilidad está diseñado para todos aquellos que quieran acercarse por primera vez al mundo de la sostenibilidad 'ESG'. El módulo proporciona una introducción al concepto ESG (ambiental, social y de gobierno); de dónde viene, cómo conectar las finanzas y la economía real y cuáles son los desarrollos regulatorios a nivel europeo. También ofrece una visión general de las principales iniciativas y su aplicación práctica para generar impactos positivos en la sostenibilidad. Entonces, abordemos su uso con un enfoque específico en la gestión de la cadena de suministro y las herramientas más innovadoras que permiten la intersección entre la estrategia corporativa y la estrategia de sostenibilidad",
+        "time": "7 minutos",
         "videoCount": "1",
         "docsCount": "0",
-        "cardImage": "assets/brand/pexels-akil-mazumder-1072824.jpg",
-        "docs": [
-            
+        "cardImage": "assets/brand/pexels-karolina-grabowska-4497761.jpg",
+        "docs": [   
         ],
         "capsules" : 
             [
                 {
                 "capsuleId": "1",
-                "capsuleTitle": "Introducción al curso",    
+                "capsuleTitle": "Sesión 0 - Introducción al curso",    
                 "capsuleDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco",
-                "capsuleTime": "9 minutos",    
+                "capsuleTime": "5 minutos",    
                 "capsuleVideo": "https://www.youtube.com/embed/AjF7x0YSzTo"
                 }
             ]
@@ -45,11 +44,11 @@
         },
         {
             "title": "Sostenibilidad corporativa",
-            "path" : "src/assets/docs/session-1/Sesión 1 - Sostenibilidad corporativa.pptx.pdf"
+            "path" : "assets/docs/session-1/Sesión 1 - Sostenibilidad corporativa.pptx.pdf"
         },
         {
             "title": "Corporate Sustainability (English)",
-            "path" : "src/assets/docs/session-1/Session 1 - Corporate Sustainability.pptx.pdf"
+            "path" : "assets/docs/session-1/Session 1 - Corporate Sustainability.pptx.pdf"
         }
     ],
     "capsules" : 
@@ -98,7 +97,7 @@
     "docs": [
         {
             "title": "Definiciones Útiles",
-            "path" : "src/assets/docs/session-2/Sesión 2 - Definiciones útiles.pdf"
+            "path" : "assets/docs/session-2/Sesión 2 - Definiciones útiles.pdf"
         },
         {
             "title": "Useful Definitions (English)",
@@ -106,11 +105,11 @@
         },
         {
             "title": "Medio Ambiente",
-            "path" : "src/assets/docs/session-2/Sesión 2 - Medio Ambiente.pptx.pdf"
+            "path" : "assets/docs/session-2/Sesión 2 - Medio Ambiente.pptx.pdf"
         },
         {
             "title": "Environmental Sustainability (English)",
-            "path" : "src/assets/docs/session-2/Session 2 - Environmental Sustainability.pptx.pdf"
+            "path" : "assets/docs/session-2/Session 2 - Environmental Sustainability.pptx.pdf"
         }
     ],
     "capsules" : 
@@ -180,7 +179,7 @@
     "docs": [
         {
             "title": "Definiciones",
-            "path" : "src/assets/docs/session-3/Sesión 3 - Definiciones.pdf"
+            "path" : "assets/docs/session-3/Sesión 3 - Definiciones.pdf"
         },
         {
             "title": "Useful Definitions (English)",
@@ -188,11 +187,11 @@
         },
         {
             "title": "Social",
-            "path" : "src/assets/docs/session-3/Sesión 3 - Social.pptx.pdf"
+            "path" : "assets/docs/session-3/Sesión 3 - Social.pptx.pdf"
         },
         {
             "title": "Social (English)",
-            "path" : "src/assets/docs/session-3/Session 3 - Social.pptx.pdf"
+            "path" : "assets/docs/session-3/Session 3 - Social.pptx.pdf"
         }
     ],
     "capsules" : 
@@ -248,7 +247,7 @@
     "docs": [
         {
             "title": "Sesión 4 - Definiciones",
-            "path" : "src/assets/docs/session-4/Sesión 4 - Definiciones útiles.pdf"
+            "path" : "assets/docs/session-4/Sesión 4 - Definiciones útiles.pdf"
         },
         {
             "title": "Session 4 -  Useful Definitions (English)",
@@ -256,11 +255,11 @@
         },
         {
             "title": "Sesión 4 - Gobernanza",
-            "path" : "src/assets/docs/session-4/Sesión 4 - Gobernanza.pptx.pdf"
+            "path" : "assets/docs/session-4/Sesión 4 - Gobernanza.pptx.pdf"
         },
         {
             "title": "Session 4 - Governance (English)",
-            "path" : "src/assets/docs/session-4/Session 4 - Governance.pptx.pdf"
+            "path" : "assets/docs/session-4/Session 4 - Governance.pptx.pdf"
         }
     ],
     "capsules" : 

@@ -25,7 +25,7 @@ export class LoginComponent implements OnInit {
   login() {
     this.inputValue = document.getElementsByTagName("input")[0].value;
     this.userInput = this.inputValue.toString();
-    if(this.userInput.includes('esgeo.com') && this.userInput != '') {
+    if(this.userInput.includes('@iac.es') && this.userInput != '') {
       this.router.navigateByUrl('/sessions');
     } else {
       this.errorEvent = true; 
