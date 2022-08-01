@@ -29,7 +29,7 @@ export class LoginComponent implements OnInit {
     this.inputPwd = document.getElementsByTagName("input")[1].value;
     this.userInput = this.inputValue.toString();
     this.userPwd = this.inputPwd.toString();
-    if(this.userInput.includes('@iac.es') && this.userInput != '' && this.userPwd.includes('inicio01') || this.userInput == 'usuario@fundae.es' && this.userInput != '' && this.userPwd.includes('inicio01'))  {
+    if(this.userInput.includes('@iac.es') && this.userInput != '' && this.userPwd.includes('inicio01') || this.userInput == 'usuario@fundae.es' && this.userInput != '' && this.userPwd.includes('inicio01') || this.userInput == 'iker.mtzdearamayona@mercedes-benz.com' && this.userInput != '' && this.userPwd.includes('inicio01'))  {
       this.router.navigateByUrl('/sessions');
     } else {
       
