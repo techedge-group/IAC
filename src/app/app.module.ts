@@ -17,6 +17,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { YoutubePipe } from './youtube.pipe';
+import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { environment } from '../environments/environment';
+import { provideAuth,getAuth } from '@angular/fire/auth';
+import { HotToastModule } from '@ngneat/hot-toast';
+
 
 
 @NgModule({
@@ -39,15 +44,14 @@ import { YoutubePipe } from './youtube.pipe';
     MatFormFieldModule,
     MatInputModule,
     RouterModule.forRoot([
-      {path: 'sessions', component: ModuleListComponent},
-      {path: 'session/:id', component: ModuleDetailComponent},
-      {path: 'login', component: LoginComponent},
-      {path: '', redirectTo: '/login', pathMatch: 'full'},
-      {path: '**', component: PageNotFoundComponent},
     ]),
     BrowserAnimationsModule,
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideAuth(() => getAuth()),
+    HotToastModule.forRoot(),
   ],
-  providers: [],
+  providers: [
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
