@@ -1,21 +1,15 @@
-<nav *ngIf="router.url !== '/login'" class="bg-white drop-shadow-md border-secondary px-2 sm:px-4 py-2.5">
+<nav *ngIf="router.url !== '/login'" class="bg-white drop-shadow-md border-secondary px-2 flex justify-between sm:px-4 py-2.5">
     <div class="container flex flex-wrap justify-between items-center mx-auto">
-    <a href="https://esgeo.eu/es/" target="_blank" class="flex items-center">
-        <img src="assets/brand/esgeo_logo.webp" class="mr-3 h-6" alt="ESGEO Logo" />
-    </a>
-    <div class="flex items-center md:order-2">
-        <button type="button" class="flex mr-3 text-sm bg-gray-100 text-secondary rounded-full md:mr-0 focus:ring-4 focus:ring-gray-300" id="user-menu-button" aria-expanded="false" type="button" data-dropdown-toggle="dropdown">
-          <span class="sr-only">Open user menu</span>
-          <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-        </button>
-        <!-- Dropdown menu -->
-        <div class="hidden z-50 my-4 text-base list-none bg-white rounded divide-y divide-gray-100 shadow" id="dropdown">
-          <ul class="py-1" aria-labelledby="dropdown">
-            <li>
-              <a href="#" class="block py-2 px-4 text-sm text-mainText hover:bg-gray-100">Sign out</a>
-            </li>
-          </ul>
-        </div>
-    </div>
-    </div>
+      <a href="https://esgeo.eu/es/" target="_blank" class="flex items-center">
+          <img src="assets/brand/esgeo_logo.webp" class="mr-3 h-6" alt="ESGEO Logo" />
+      </a>
+    </div>  
+    <ng-container *ngIf="authService.currentUser$ | async as user">
+      <button mat-button routerLink="login" (click)="logout()" class="text-gray-800 font-medium py-2 px-4 rounded inline-flex items-center">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-6a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 007.5 21h6a2.25 2.25 0 002.25-2.25V15M12 9l-3 3m0 0l3 3m-3-3h12.75" />
+        </svg>
+        <span>Logout</span>
+      </button>
+    </ng-container>
   </nav>

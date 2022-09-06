@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { Router }  from "@angular/router";
+import { AuthenticationService } from '../services/authentication.service';
+import { HotToastService } from '@ngneat/hot-toast';
 
 
 @Component({
@@ -9,7 +12,6 @@ import { Router }  from "@angular/router";
 })
 export class LoginComponent implements OnInit {
 
-  
   inputValue:any;
   userInput:any = [];
   errorEvent:boolean = false;
@@ -17,23 +19,51 @@ export class LoginComponent implements OnInit {
   inputPwd:any;
   userPwd:any;
   
-  
-  constructor(public router: Router) { }
+  loginForm = new FormGroup({
+    email: new FormControl('', [Validators.required, Validators.email]),
+    password: new FormControl('', [Validators.required])
+  })
+
+  constructor(
+    public router: Router,
+    private authService: AuthenticationService,
+    private toast: HotToastService
+    ) { }
 
 
   ngOnInit(): void {
   }
 
-  login() {
-    this.inputValue = document.getElementsByTagName("input")[0].value;
-    this.inputPwd = document.getElementsByTagName("input")[1].value;
-    this.userInput = this.inputValue.toString();
-    this.userPwd = this.inputPwd.toString();
-    if(this.userInput.includes('@iac.es') && this.userInput != '' && this.userPwd.includes('inicio01') || this.userInput == 'usuario@fundae.es' && this.userInput != '' && this.userPwd.includes('inicio01') || this.userInput == 'iker.mtzdearamayona@mercedes-benz.com' && this.userInput != '' && this.userPwd.includes('inicio01'))  {
-      this.router.navigateByUrl('/sessions');
-    } else {
-      
-      this.errorEvent = true; 
+  summit() {
+    if(!this.loginForm.valid) {
+      return;
     }
-  };
+    const { email, password } = this.loginForm.value;
+    this.authService.login(email, password).pipe(
+      this.toast.observe({
+        success: 'Logged Succesfully',
+        loading: 'Logged in...',
+        error: 'There was an error'
+      })
+    ).subscribe(() => {
+      this.router.navigate(['/sessions']);
+    })
+  }
+
+  // VERSION ANTIGUA LOGIN FAKE 
+
+  // login() {
+  //   this.inputValue = document.getElementsByTagName("input")[0].value;
+  //   this.inputPwd = document.getElementsByTagName("input")[1].value;
+  //   this.userInput = this.inputValue.toString();
+  //   this.userPwd = this.inputPwd.toString();
+  //   if(this.userInput.includes('@iac.es') && this.userInput != '' && this.userPwd.includes('inicio01') || this.userInput == 'usuario@fundae.es' && this.userInput != '' && this.userPwd.includes('inicio01') || this.userInput == 'iker.mtzdearamayona@mercedes-benz.com' && this.userInput != '' && this.userPwd.includes('inicio01'))  {
+  //     this.router.navigateByUrl('/sessions');
+  //   } else {
+      
+  //     this.errorEvent = true; 
+  //   }
+  // };
+
+
 }

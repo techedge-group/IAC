@@ -1,7 +1,7 @@
 <div class="container mx-auto md:mb-24">
-    <div class="w-full h-auto flex justify-start items-center gap-4 p-4 mt-12 md:mt-24 md:mb-8 md:p-0">
-        <p class="font-bold text-darkText text-4xl md:text-5xl">¡Bienvenido!</p>
-        <img class="h-8 w-8 md:h-12 md:w-12" src="assets/brand/Emoji.png" alt="">
+    <div class="w-full h-auto flex-col justify-center items-center gap-8 p-4 mt-12 md:mt-24 md:mb-8 md:p-0">
+        <img class="h-8 w-8 mb-4 md:h-12 md:w-12" src="assets/brand/Emoji.png" alt="">
+        <p *ngIf="user$ | async as user" class="font-bold text-darkText text-3xl md:text-4xl">¡Bienvenido, {{user.email}}!</p>
     </div>
     <div class="p-5 md:p-0">
         <p class="m-description md:text-xl">Listado de Sesiones ({{this.count}})</p>
