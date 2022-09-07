@@ -3,7 +3,7 @@ name: Build and Deploy Google App Engine
 on:
   push:
     branches:
-      - 'main'
+      - 'master'
 jobs:
   tests:
     name: Build and test
