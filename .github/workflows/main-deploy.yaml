@@ -1,0 +1,51 @@
+name: Build and Deploy Google App Engine
+
+on:
+  push:
+    branches:
+      - 'master'
+jobs:
+  tests:
+    name: Build and test
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+    - name: Install node
+      uses: actions/setup-node@v2
+      with:
+        node-version: '14'
+    - name: Install dependencies
+      run: npm install
+    - name: Install dependencies
+      run: npm run build
+  
+  deploy:
+    name: GCP Storage Deploy
+    needs: tests
+    runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+      contents: read
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Install node
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+      - name: Install dependencies
+        run: npm ci
+      - name: Build monolax project
+        run: npm run build
+      - name: login
+        uses : 'google-github-actions/auth@v0'
+        with:
+          workload_identity_provider: 'projects/25981868843/locations/global/workloadIdentityPools/esgeo-pool/providers/github'
+          service_account: 'esgeo-cicd-account@esgeo-eu-portal-sostenibilidad.iam.gserviceaccount.com'
+      - name: Deploy Google App Engine
+        uses: google-github-actions/upload-cloud-storage@v0
+        with:
+            path: '/dist/iac-app'
+            destination: 'esgeo-eu-portal-sostenibilidad-bucket'
+            parent: false
