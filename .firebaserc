@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "esgeo-eu-portal-sostenibilidad": {
+      "hosting": {
+        "iac-app": [
+          "esgeo-eu-portal-sostenibilidad"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "esgeo-eu-portal-sostenibilidad"
+  }
+}

@@ -1,0 +1,57 @@
+@layer base {
+  [data-theme="default"] {
+    --color-primary: #A0CE4E;
+    --color-secondary: #045B62;
+    --color-primary-dark: #94C240;
+    --color-secondary-dark: #043E43;
+    --bg-footer: url('../brand/bg-footer.png');
+    --bg-contact: url('../brand/bg-contact.png');
+    --logo: url('../brand/esgeo_logo.webp');
+  }
+  [data-theme="esgeo"] {
+    --color-primary: #045B62;
+    --color-secondary: #A0CE4E;
+    --color-primary-dark: #043E43;
+    --color-secondary-dark: #94C240;
+    --bg-footer: url('../brand/bg-footer.png');
+    --bg-contact: url('../brand/bg-contact.png');
+    --logo: url('../brand/esgeo_logo.webp');
+  }
+  [data-theme="techedgegroup"] {
+    --color-primary: #26ABA6;
+    --color-secondary: #65B962;
+    --color-primary-dark: #1C948F;
+    --color-secondary-dark: #519A4E;
+    --bg-footer: url('../brand/bg-footer-techedge.png');
+    --bg-contact: url('../brand/bg-contact-techedge.png');
+    --logo: url('../brand/logo-techedge.png');
+  }
+  [data-theme="daimlergroup"] {
+    --color-primary: #1695CE;
+    --color-secondary: #394C6A;
+    --color-primary-dark: #1E8ABB;
+    --color-secondary-dark: #253C61;
+    --bg-footer: url('../brand/bg-footer-daimler.png');
+    --bg-contact: url('../brand/bg-contact-daimler.png');
+    --logo: url('../brand/logo-daimler.png');
+  }
+  [data-theme="iac"] {
+    --color-primary: #009FDE;
+    --color-secondary: #182D4A;
+    --color-primary-dark: #078CC0;
+    --color-secondary-dark: #162438;
+    --bg-footer: url('../brand/bg-footer-iac.png');
+    --bg-contact: url('../brand/bg-contact-iac.png');
+    --logo: url('../brand/logo-iac.png');
+  }
+  // NECESITAMOS INTRODUCIR EL NOMBRE DEL DOMINIO DEL NUEVO CLIENTE Y AÑADIR LAS PROPIEDADES SCSS CORRESPONDIENTES
+  // [data-theme="DOMIO DE NUEVO CLIENTE"] {
+  //   --color-primary: #009FDE;
+  //   --color-secondary: #182D4A;
+  //   --color-primary-dark: #078CC0;
+  //   --color-secondary-dark: #162438;
+  //   --bg-footer: url('../brand/bg-footer-iac.png');
+  //   --bg-contact: url('../brand/bg-contact-iac.png');
+  //   --logo: url('../brand/logo-iac.png');
+  // }
+}

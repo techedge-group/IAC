@@ -12,10 +12,10 @@
           <img src="assets/brand/esgeo_logo.webp" class="w-36" alt="">
         </div>
         <div class="">
-            <p class="text-center text-lightText mb-8">
+            <p class="text-center text-textColor-light mb-8">
                 Por favor, introduce usuario y contraseña
             </p>
-            <form [formGroup]="loginForm" (ngSubmit)="summit()" class="flex flex-col max-w-md text-mainText">
+            <form [formGroup]="loginForm" (ngSubmit)="summit()" class="flex flex-col max-w-md text-textColor">
               <mat-form-field appearance="fill" class="mb-4">
                 <mat-label>Nombre de usuario</mat-label>
                 <input matInput placeholder="Email address" formControlName="email">
@@ -23,10 +23,10 @@
               </mat-form-field>
               <mat-form-field appearance="fill" class="mb-14">
                 <mat-label>Contraseña</mat-label>
-                <input matInput placeholder="Password" formControlName="password" type="password" class="text-mainText">
+                <input matInput placeholder="Password" formControlName="password" type="password" class="text-textColor">
                 <mat-error>Por favor, introduzca una contraseña válida</mat-error>
               </mat-form-field>
-              <button mat-raised-button class="h-12 w-full items-center py-2 px-3 mb-4 font-medium text-center text-white bg-secondary rounded-lg hover:bg-hSecondary">Login</button>
+              <button mat-raised-button class="h-12 w-full items-center py-2 px-3 mb-4 font-medium text-center text-white bg-loginBtn rounded-lg hover:bg-loginBtn-dark">Login</button>
               <p class="text-center text-indigo-500">¿Has olvidado tu contraseña?</p>
             </form>
         </div>

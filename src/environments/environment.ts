@@ -12,6 +12,7 @@ export const environment = {
     messagingSenderId: '25981868843',
     measurementId: 'G-XET75D5RR2',
   },
+  themes : ['iac', 'techedgegroup', 'daimlergroup', 'esgeo'],
   production: false
 };
 
