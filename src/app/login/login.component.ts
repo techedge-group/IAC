@@ -39,9 +39,8 @@ export class LoginComponent implements OnInit {
     this.authService
       .login(email, password)
       .pipe(
-        tap(),
         catchError(async (error) => {
-          switch(error.code){
+          switch (error.code) {
             case 'auth/user-not-found':
               this.toast.error(`No User with the email ${email} found`);
               break;
@@ -49,19 +48,15 @@ export class LoginComponent implements OnInit {
               this.toast.error(`Wrong Password`);
               break;
             default:
-              this.toast.error('There was an error')
+              this.toast.error('There was an error');
           }
-        }),
-        map(() =>
-          this.toast.observe({
-            success: 'Logged Succesfully',
-            loading: 'Logged in...',
-            error: 'There was an error',
-          })
-        )
+        })
       )
-      .subscribe(() => {
-        this.router.navigate(['/sessions']);
+      .subscribe((data) => {
+        if (data !== undefined) {
+          this.toast.success('Iniciada sesión correctamente');
+          this.router.navigate(['/sessions']);
+        }
       });
   }
 
