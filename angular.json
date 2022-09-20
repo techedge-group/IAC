@@ -105,6 +105,16 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "iac-app:build:production",
+            "firebaseProject": "esgeo-eu-portal-sostenibilidad",
+            "firebaseHostingSite": "esgeo-eu-portal-sostenibilidad"
+          }
         }
       }
     }

@@ -3,20 +3,20 @@
     <div id="header" class="w-full h-1/5 p-4 lg:w-1/3 lg:pl-8 lg:flex justify-between items-center">
         <div>
             <a href="" [routerLink]="['/sessions']">
-                <div class="flex gap-2 text-lightText flex justify-start items-center mb-4">
+                <div class="flex gap-2 text-textColor-light flex justify-start items-center mb-4">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
                     <p class="">Volver</p>
                 </div>
             </a>
-            <h5 class="text-lightText mb-2">{{session[0].number}}</h5>
+            <h5 class="text-textColor-light mb-2">{{session[0].number}}</h5>
             <h5 class="m-title">{{session[0].title}}</h5>
             <p class="m-text mb-8">{{session[0].resume}}</p>
             <div class="flex gap-4">
-                <div *ngIf="session[0].videoCount != 0" class="flex justify-start items-center mb-6 text-lightText">
+                <div *ngIf="session[0].videoCount != 0" class="flex justify-start items-center mb-6 text-textColor-light">
                     <svg class="w-6 h-6 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg>
                     <p class="m-assetText">{{session[0].videoCount}}</p>
                 </div>
-                <div *ngIf="session[0].docsCount != 0" class="flex justify-start items-center mb-6 text-lightText">
+                <div *ngIf="session[0].docsCount != 0" class="flex justify-start items-center mb-6 text-textColor-light">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
                     <p class="m-assetText">{{session[0].docsCount}}</p>
                 </div>
@@ -39,8 +39,8 @@
                     <a href={{doc.path}} target="_blank">
                         <div class="w-full h-auto bg-white p-3 flex justify-between items-center rounded-lg bg-white rounded-lg border border-gray-200 shadow hover:shadow-md">
                             <div>
-                                <p class="overflow-hidden h-6 font-sm font-medium text-mainText">{{doc.title}}</p>
-                                <p class="text-m-text text overflow-hidden h-6 font-sm text-lightText">{{doc.title}}.pdf</p>
+                                <p class="overflow-hidden h-6 font-sm font-medium text-textColor">{{doc.title}}</p>
+                                <p class="text-m-text text overflow-hidden h-6 font-sm text-textColor-light">{{doc.title}}.pdf</p>
                             </div>
                             <div>
                                 <a href={{doc.path}} download>
@@ -59,8 +59,8 @@
             <!-- CAPSULE  -->
             <div *ngFor="let capsule of capsules" class="w-full h-auto flex flex-col gap-2 pt-4 pb-12">
                 <div class="flex flex-col justify-start items-start gap-4 mb-4 md:flex-row md:items-center">
-                    <p class="text-darkText text-xl font-bold">{{capsule.capsuleTitle}}</p>
-                    <div class="flex text-lightText text-md font-medium gap-1">
+                    <p class="text-textColor-dark text-xl font-bold">{{capsule.capsuleTitle}}</p>
+                    <div class="flex text-textColor-light text-md font-medium gap-1">
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
                         <p class="">{{capsule.capsuleTime}}</p>
                     </div>

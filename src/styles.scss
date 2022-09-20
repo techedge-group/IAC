@@ -1,20 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import 'assets/styles/themes.scss';
 
 @layer components {
   
   .m-title {
-    @apply mb-2 text-3xl font-bold text-darkText;
+    @apply mb-2 text-3xl font-bold text-textColor-dark;
   }
   .m-subtitle {
-    @apply text-darkText text-xl font-bold;
+    @apply text-textColor-dark text-xl font-bold;
   }
   .m-description {
-    @apply mb-3 text-lg font-medium text-mainText;
+    @apply mb-3 text-lg font-medium text-textColor;
   }
   .m-text {
-    @apply mb-3 font-merriweather font-medium text-mainText;
+    @apply mb-3 font-merriweather font-medium text-textColor;
   }
 }
 html, body { height: 100%; }

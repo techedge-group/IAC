@@ -1,3 +1,5 @@
+
+
 module.exports = {
   content: [
     "./src/**/*.{html,ts}",
@@ -5,15 +7,28 @@ module.exports = {
   theme: {
        extend: {
         colors: {
-          corp: '#A0CE4E',
-          hCorp: '#93C043',
-          secondary: '#045B62',
-          hSecondary: '#055359',
+          corp: {
+            DEFAULT: 'var(--color-primary)',
+            hover:  'var(--color-primary-dark)'
+          },
+          secondary: {
+            DEFAULT: 'var(--color-secondary)',
+            hover:  'var(--color-secondary-dark)'
+          },
+          textColor: {
+            DEFAULT: '#777777',
+            light: '#94A3B8',
+            dark: '#1E293B',
+          },
+          logo: {
+            DEFAULT: 'var(--logo)'
+          },
           test: '#FF0000',
-          darkText: '#1E293B',
-          mainText: '#777777',
-          lightText: '#94A3B8',
           gray: '#363839',
+          loginBtn: {
+            DEFAULT: '#045B62',
+            dark: '#043E43'
+          }
         },
         fontFamily: {
           'merriweather': ["'Merriweather'", 'serif']

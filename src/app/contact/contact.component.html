@@ -1,5 +1,5 @@
 
-<div *ngIf="router.url !== '/login' && router.url !== ''" class="container mx-auto border border-gray-200 mb-24 rounded-xl shadow bg-no-repeat bg-cover" style="background-image: url('assets/brand/bg-contact.png');">
+<div *ngIf="router.url !== '/login' && router.url !== ''" class="container mx-auto border border-gray-200 mb-24 rounded-xl shadow bg-no-repeat bg-cover" style="background-image: var(--bg-contact);">
   <div class="flex p-4 w-full text-center sm:p-8">
       <form class="p-8 w-full flex flex-col justify-start lg:w-1/2" [formGroup]="form" method="post" (ngSubmit)="onSubmit()">
         <div class="flex flex-col justify-start items-start text-left mb-8">
@@ -22,7 +22,7 @@
                 <mat-hint align="end"> {{message.value?.length || 0}}/256</mat-hint>
                 <mat-error *ngIf="message.invalid">Por favor, introduce un mensaje</mat-error>
             </mat-form-field>
-            <button [disabled]="isLoading" class="h-12 w-full items-center py-2 px-3 font-medium text-center text-white bg-corp rounded-lg hover:bg-hCorp lg:w-56" type="submit">Enviar mensaje</button>
+            <button [disabled]="isLoading" class="h-12 w-full items-center py-2 px-3 font-medium text-center text-white bg-secondary rounded-lg hover:bg-secondary-dark lg:w-56" type="submit">Enviar mensaje</button>
             <input [formControl]="honeypot" class="hidden" type="text" />
             <div [ngClass]="!submitted? 'hidden' : 'visible'" class="center-text">
                 <span>{{responseMessage}}</span>

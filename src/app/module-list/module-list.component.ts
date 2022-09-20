@@ -15,6 +15,7 @@ export class ModuleListComponent implements OnInit {
  mySession:any;
  count:number = 0;
  user$ = this.authService.currentUser$;
+ username:string = '';
 
 
   constructor(private router: ActivatedRoute, private authService: AuthenticationService) { }
@@ -22,6 +23,11 @@ export class ModuleListComponent implements OnInit {
   ngOnInit(): void {
     this.sessions = data;
     this.count = this.sessions.length;
+    this.authService.currentUser$.subscribe((user:any) => {
+      if(user) {
+        this.username = user.email.substring(user.email.indexOf('@'), '.'+3);      
+      }
+    });  
    
   }
 
