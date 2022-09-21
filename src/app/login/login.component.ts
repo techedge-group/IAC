@@ -3,7 +3,8 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { AuthenticationService } from '../services/authentication.service';
 import { HotToastService } from '@ngneat/hot-toast';
-import { catchError, map, tap } from 'rxjs';
+import { MatExpansionModule } from '@angular/material/expansion';
+import { catchError } from 'rxjs';
 
 @Component({
   selector: 'app-login',
@@ -11,22 +12,29 @@ import { catchError, map, tap } from 'rxjs';
   styleUrls: ['./login.component.scss'],
 })
 export class LoginComponent implements OnInit {
+
   inputValue: any;
   userInput: any = [];
   errorEvent: boolean = false;
   error: string = 'Por favor, introduce un usuario y contraseña correcto';
   inputPwd: any;
   userPwd: any;
+  panelOpenState:boolean = false;
 
   loginForm = new FormGroup({
     email: new FormControl('', [Validators.required, Validators.email]),
     password: new FormControl('', [Validators.required]),
   });
 
+  recoveryForm = new FormGroup({
+    email: new FormControl('', [Validators.required, Validators.email]),
+  });
+
   constructor(
     public router: Router,
     private authService: AuthenticationService,
-    private toast: HotToastService
+    private toast: HotToastService,
+    public expansion : MatExpansionModule
   ) {}
 
   ngOnInit(): void {}
@@ -60,6 +68,42 @@ export class LoginComponent implements OnInit {
       });
   }
 
+  togglePwdRecovery() {
+    this.panelOpenState = !this.panelOpenState
+    console.log("HOLA",this.panelOpenState);
+  }
+
+  recovery() {
+    if(!this.recoveryForm.valid) {
+      return;
+    }
+    const { email } = this.recoveryForm.value;
+    this.authService
+    .resetPassword(email)
+    .pipe(
+      catchError(async (error) => {
+      this.toast.error(`No User with the email ${email} found`);
+      })
+    )
+    .subscribe(() => {
+      this.toast.success('Reiniciado correctament');
+      this.panelOpenState = !this.panelOpenState;
+    })
+    // .pipe(
+    //   catchError(async (error) => {
+    //     switch (error.code) {
+    //       case 'auth/user-not-found':
+    //         this.toast.error(`No User with the email ${email} found`);
+    //         break;
+    //       default:
+    //         this.authService.resetPassword(email).subscribe(() => {
+    //           this.toast.success('Contrasña reiniciada correctamente');
+    //           this.panelOpenState = true;
+    //         })
+    //     }
+    //   })
+    // );
+  }
   // VERSION ANTIGUA LOGIN FAKE
 
   // login() {
@@ -75,3 +119,7 @@ export class LoginComponent implements OnInit {
   //   }
   // };
 }
+
+
+
+

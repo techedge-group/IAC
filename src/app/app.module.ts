@@ -21,6 +21,7 @@ import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
 import { environment } from '../environments/environment';
 import { provideAuth,getAuth } from '@angular/fire/auth';
 import { HotToastModule } from '@ngneat/hot-toast';
+import { MatExpansionModule } from '@angular/material/expansion';
 
 
 
@@ -43,6 +44,7 @@ import { HotToastModule } from '@ngneat/hot-toast';
     AppRoutingModule,
     MatFormFieldModule,
     MatInputModule,
+    MatExpansionModule,
     RouterModule.forRoot([
     ]),
     BrowserAnimationsModule,
