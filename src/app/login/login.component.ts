@@ -12,14 +12,13 @@ import { catchError } from 'rxjs';
   styleUrls: ['./login.component.scss'],
 })
 export class LoginComponent implements OnInit {
-
   inputValue: any;
   userInput: any = [];
   errorEvent: boolean = false;
   error: string = 'Por favor, introduce un usuario y contraseña correcto';
   inputPwd: any;
   userPwd: any;
-  panelOpenState:boolean = false;
+  panelOpenState: boolean = false;
 
   loginForm = new FormGroup({
     email: new FormControl('', [Validators.required, Validators.email]),
@@ -34,7 +33,7 @@ export class LoginComponent implements OnInit {
     public router: Router,
     private authService: AuthenticationService,
     private toast: HotToastService,
-    public expansion : MatExpansionModule
+    public expansion: MatExpansionModule
   ) {}
 
   ngOnInit(): void {}
@@ -69,40 +68,24 @@ export class LoginComponent implements OnInit {
   }
 
   togglePwdRecovery() {
-    this.panelOpenState = !this.panelOpenState
-    console.log("HOLA",this.panelOpenState);
+    this.panelOpenState = !this.panelOpenState;
+    console.log('HOLA', this.panelOpenState);
   }
 
   recovery() {
-    if(!this.recoveryForm.valid) {
+    if (!this.recoveryForm.valid) {
       return;
     }
     const { email } = this.recoveryForm.value;
     this.authService
-    .resetPassword(email)
-    .pipe(
-      catchError(async (error) => {
-      this.toast.error(`No User with the email ${email} found`);
+      .resetPassword(email)
+      .then(() => {
+        this.toast.success('Reiniciado correctament');
+        this.panelOpenState = !this.panelOpenState;
       })
-    )
-    .subscribe(() => {
-      this.toast.success('Reiniciado correctament');
-      this.panelOpenState = !this.panelOpenState;
-    })
-    // .pipe(
-    //   catchError(async (error) => {
-    //     switch (error.code) {
-    //       case 'auth/user-not-found':
-    //         this.toast.error(`No User with the email ${email} found`);
-    //         break;
-    //       default:
-    //         this.authService.resetPassword(email).subscribe(() => {
-    //           this.toast.success('Contrasña reiniciada correctamente');
-    //           this.panelOpenState = true;
-    //         })
-    //     }
-    //   })
-    // );
+      .catch((error) =>
+        this.toast.error(`No User with the email ${email} found`)
+      );
   }
   // VERSION ANTIGUA LOGIN FAKE
 
@@ -119,7 +102,3 @@ export class LoginComponent implements OnInit {
   //   }
   // };
 }
-
-
-
-

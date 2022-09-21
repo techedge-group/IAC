@@ -21,7 +21,7 @@ export class AuthenticationService {
   }
 
   resetPassword(username:string) {
-    return from(sendPasswordResetEmail(this.auth, username));
+    return sendPasswordResetEmail(this.auth, username)
   }
 
 }
