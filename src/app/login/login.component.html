@@ -42,9 +42,9 @@
               <mat-error>Por favor, introduzca una cuenta válida</mat-error>
               <mat-hint>Correo de electrónico de contacto</mat-hint>
             </mat-form-field>
-            <div class="flex justify-end gap-4">
-              <button (click)="togglePwdRecovery()" type="button" mat-raised-button class="h-12 w-auto py-2 px-4 rounded-lg text-white bg-red-400 hover:bg-red-500">Cancelar</button>
-              <button mat-raised-button class="bg-loginBtn h-12 w-auto py-2 px-4 rounded-lg text-white hover:bg-loginBtn-dark">Solicitar nueva contraseña</button>
+            <div class="gap-4">
+              <button mat-raised-button class="bg-loginBtn h-12 w-full py-2 px-4 rounded-lg text-white hover:bg-loginBtn-dark">Solicitar nueva contraseña</button>
+              <button (click)="togglePwdRecovery()" type="button" mat-raised-button class="h-12 w-full py-2 px-4 rounded-lg text-white bg-red-400 hover:bg-red-500">Cancelar</button>
             </div>
             </form>
           </mat-expansion-panel>

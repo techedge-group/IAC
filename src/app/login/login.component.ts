@@ -36,7 +36,8 @@ export class LoginComponent implements OnInit {
     public expansion: MatExpansionModule
   ) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+  }
 
   summit() {
     if (!this.loginForm.valid) {
@@ -69,7 +70,6 @@ export class LoginComponent implements OnInit {
 
   togglePwdRecovery() {
     this.panelOpenState = !this.panelOpenState;
-    console.log('HOLA', this.panelOpenState);
   }
 
   recovery() {
