@@ -21,11 +21,8 @@
     "@angular/platform-browser": "~13.3.0",
     "@angular/platform-browser-dynamic": "~13.3.0",
     "@angular/router": "~13.3.0",
-    "@firebase/app": "^0.7.33",
     "@ngneat/hot-toast": "^4.1.0",
     "@ngneat/overview": "^3.0.4",
-    "firebase-admin": "^11.0.1",
-    "firebase-functions": "^3.23.0",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"

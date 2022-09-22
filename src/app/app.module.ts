@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FIREBASE_OPTIONS } from '@angular/fire/compat';
+import { PERSISTENCE } from '@angular/fire/compat/auth';
 
 import { AppRoutingModule } from './app-routing.module';
 import { RouterModule } from '@angular/router';
@@ -19,7 +21,7 @@ import { MatInputModule } from '@angular/material/input';
 import { YoutubePipe } from './youtube.pipe';
 import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
 import { environment } from '../environments/environment';
-import { provideAuth,getAuth } from '@angular/fire/auth';
+import { provideAuth, getAuth } from '@angular/fire/auth';
 import { HotToastModule } from '@ngneat/hot-toast';
 import { MatExpansionModule } from '@angular/material/expansion';
 
@@ -39,21 +41,24 @@ import { MatExpansionModule } from '@angular/material/expansion';
   ],
   imports: [
     BrowserModule,
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+
     ReactiveFormsModule,
     HttpClientModule,
     AppRoutingModule,
     MatFormFieldModule,
     MatInputModule,
     MatExpansionModule,
-    RouterModule.forRoot([
-    ]),
+    RouterModule.forRoot([]),
     BrowserAnimationsModule,
-    provideFirebaseApp(() => initializeApp(environment.firebase)),
-    provideAuth(() => getAuth()),
     HotToastModule.forRoot(),
+
+    provideAuth(() => getAuth()),
   ],
   providers: [
+    { provide: FIREBASE_OPTIONS, useValue: environment.firebase },
+    { provide: PERSISTENCE, useValue: 'local' },
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
