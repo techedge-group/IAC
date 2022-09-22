@@ -3,7 +3,8 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { AuthenticationService } from '../services/authentication.service';
 import { HotToastService } from '@ngneat/hot-toast';
-import { catchError, map, tap } from 'rxjs';
+import { MatExpansionModule } from '@angular/material/expansion';
+import { catchError } from 'rxjs';
 
 @Component({
   selector: 'app-login',
@@ -17,19 +18,26 @@ export class LoginComponent implements OnInit {
   error: string = 'Por favor, introduce un usuario y contraseña correcto';
   inputPwd: any;
   userPwd: any;
+  panelOpenState: boolean = false;
 
   loginForm = new FormGroup({
     email: new FormControl('', [Validators.required, Validators.email]),
     password: new FormControl('', [Validators.required]),
   });
 
+  recoveryForm = new FormGroup({
+    email: new FormControl('', [Validators.required, Validators.email]),
+  });
+
   constructor(
     public router: Router,
     private authService: AuthenticationService,
-    private toast: HotToastService
+    private toast: HotToastService,
+    public expansion: MatExpansionModule
   ) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+  }
 
   summit() {
     if (!this.loginForm.valid) {
@@ -60,6 +68,25 @@ export class LoginComponent implements OnInit {
       });
   }
 
+  togglePwdRecovery() {
+    this.panelOpenState = !this.panelOpenState;
+  }
+
+  recovery() {
+    if (!this.recoveryForm.valid) {
+      return;
+    }
+    const { email } = this.recoveryForm.value;
+    this.authService
+      .resetPassword(email)
+      .then(() => {
+        this.toast.success('Reiniciado correctament');
+        this.panelOpenState = !this.panelOpenState;
+      })
+      .catch((error) =>
+        this.toast.error(`No User with the email ${email} found`)
+      );
+  }
   // VERSION ANTIGUA LOGIN FAKE
 
   // login() {
