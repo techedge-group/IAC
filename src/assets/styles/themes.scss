@@ -1,12 +1,12 @@
 @layer base {
   [data-theme="default"] {
-    --color-primary: #A0CE4E;
-    --color-secondary: #045B62;
-    --color-primary-dark: #94C240;
-    --color-secondary-dark: #043E43;
+    --color-primary: #045B62;
+    --color-secondary: #A0CE4E;
+    --color-primary-dark: #043E43;
+    --color-secondary-dark: #94C240;
     --bg-footer: url('../brand/bg-footer.png');
     --bg-contact: url('../brand/bg-contact.png');
-    --logo: url('../brand/esgeo_logo.webp');
+    --logo: url('../brand/logo-esgeo-sm.png');
   }
   [data-theme="esgeo"] {
     --color-primary: #045B62;
@@ -15,7 +15,7 @@
     --color-secondary-dark: #94C240;
     --bg-footer: url('../brand/bg-footer.png');
     --bg-contact: url('../brand/bg-contact.png');
-    --logo: url('../brand/esgeo_logo.webp');
+    --logo: url('../brand/logo-esgeo-sm.png');
   }
   [data-theme="techedgegroup"] {
     --color-primary: #26ABA6;

@@ -19,12 +19,16 @@ export class LoginComponent implements OnInit {
   inputPwd: any;
   userPwd: any;
   panelOpenState: boolean = false;
+  userInputMessage:string = '';
+  userPwdMessage:string = '';
+  userDefaultErrorMessage:string = '';
 
   loginForm = new FormGroup({
     email: new FormControl('', [Validators.required, Validators.email]),
     password: new FormControl('', [Validators.required]),
   });
 
+  
   recoveryForm = new FormGroup({
     email: new FormControl('', [Validators.required, Validators.email]),
   });
@@ -50,24 +54,33 @@ export class LoginComponent implements OnInit {
         catchError(async (error) => {
           switch (error.code) {
             case 'auth/user-not-found':
-              this.toast.error(`No User with the email ${email} found`);
+              this.userInputMessage = `No se ha encontrado usuario con la cuenta ${email}`
+              console.log(this.userInputMessage);
+              // this.toast.error(`No se ha encontrado usuario con la cuenta ${email}`);
               break;
             case 'auth/wrong-password':
-              this.toast.error(`Wrong Password`);
+              this.userPwdMessage ='Contraseña incorrecta';
+              console.log(this.userPwdMessage);
+              // this.toast.error(`Contraseña incorrecta`);
               break;
             default:
-              this.toast.error('There was an error');
+              // this.toast.error('Se ha producido un error');
+              this.userDefaultErrorMessage = 'Se ha producido un error';
+              console.log(this.userDefaultErrorMessage);
           }
         })
       )
       .subscribe((data) => {
         if (data !== undefined) {
-          this.toast.success('Iniciada sesión correctamente');
+          this.toast.success('Sesión iniciada correctamente');
           this.router.navigate(['/sessions']);
         }
       });
   }
 
+  clearMessage() {
+    this.userInputMessage = '';
+  }
   togglePwdRecovery() {
     this.panelOpenState = !this.panelOpenState;
   }
@@ -80,11 +93,11 @@ export class LoginComponent implements OnInit {
     this.authService
       .resetPassword(email)
       .then(() => {
-        this.toast.success('Reiniciado correctament');
+        this.toast.success('Se ha enviado a su correo electrónico instrucciones para reiniciar su contraseña');
         this.panelOpenState = !this.panelOpenState;
       })
       .catch((error) =>
-        this.toast.error(`No User with the email ${email} found`)
+        this.toast.error(`No se ha encontrado usuario con la cuenta ${email}`)
       );
   }
   // VERSION ANTIGUA LOGIN FAKE

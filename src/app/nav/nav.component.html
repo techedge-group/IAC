@@ -1,18 +1,18 @@
-<nav *ngIf="router.url !== '/login'" class="bg-white drop-shadow-md border-secondary px-2 flex justify-between sm:px-4 py-2.5">
-    <div class="container flex flex-wrap justify-between items-center mx-auto">
+<nav *ngIf="router.url !== '/login'" class="w-full bg-white drop-shadow-md border-secondary px-2 flex justify-around items-center sm:px-2 py-2.5">
+    <div class="container flex flex-wrap justify-between items-center">
       <a href="https://esgeo.eu/es/" target="_blank" class="flex items-center">
-        <div class="mr-3 h-8 w-32 bg-no-repeat bg-contain" alt="logo" style="background-image: var(--logo);">
+        <div class="h-8 w-32 bg-no-repeat bg-contain" alt="logo" style="background-image: var(--logo);">
           <p class="text-transparent">.</p>
         </div>
           <!-- <img src="assets/brand/esgeo_logo.webp" class="mr-3 h-6 logo" alt="ESGEO Logo" /> -->
       </a>
     </div>  
-    <ng-container *ngIf="authService.currentUser$ | async as user">
-      <button mat-button routerLink="login" (click)="logout()" class="text-gray-800 font-medium py-2 px-4 rounded inline-flex items-center">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+    <ng-container *ngIf="authService.currentUser$ | async as user" class="container flex flex-wrap justify-between items-center mx-auto">
+      <button mat-button routerLink="login" (click)="logout()" class="w-auto text-gray-700 font-medium rounded flex flex-row gap-1 hover:text-gray-900">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 sm:w-6 h-6">
           <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-6a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 007.5 21h6a2.25 2.25 0 002.25-2.25V15M12 9l-3 3m0 0l3 3m-3-3h12.75" />
         </svg>
-        <span>Logout</span>
+        <span class="w-24 hover:underline">Cerrar sesión</span>
       </button>
     </ng-container>
   </nav>

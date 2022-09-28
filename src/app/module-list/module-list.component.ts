@@ -16,6 +16,7 @@ export class ModuleListComponent implements OnInit {
  count:number = 0;
  user$ = this.authService.currentUser$;
  username:string = '';
+ displayName:string = '';
 
 
   constructor(private router: ActivatedRoute, private authService: AuthenticationService) { }
@@ -24,11 +25,11 @@ export class ModuleListComponent implements OnInit {
     this.sessions = data;
     this.count = this.sessions.length;
     this.authService.currentUser$.subscribe((user:any) => {
+    this.displayName = user?.displayName;
       if(user) {
-        this.username = user.email.substring(user.email.indexOf('@'), '.'+3);      
+        this.username = user.email.substring(user.email.indexOf('@'), '.'+3);
       }
     });  
    
   }
-
 }

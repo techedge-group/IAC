@@ -1,48 +1,53 @@
 
-<section class="min-h-screen flex items-stretch text-white">
+<section class="h-screen w-screen flex items-stretch text-white">
   <div class="lg:flex w-1/2 hidden bg-gray-500 bg-no-repeat bg-cover relative items-center" style="background-image: url(https://images.unsplash.com/photo-1577495508048-b635879837f1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=675&q=80);">
       <div class="absolute bg-black opacity-40 inset-0 z-0"></div>
   </div>
-  <div class="m-8 lg:w-1/2 w-full flex items-center justify-center md:px-16 px-0 z-0" style="background-color: #FFFF;">
+  <div class="px-5 lg:w-1/2 w-full flex items-center justify-center md:px-16 px-0 z-0" style="background-color: #FFFF;">
       <div class="absolute lg:hidden z-10 inset-0 bg-gray-500 bg-no-repeat bg-cover items-center" style="background-image: 'url(https://images.unsplash.com/photo-1577495508048-b635879837f1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=675&q=80)';">
           <div class="absolute bg-black opacity-60 inset-0 z-0"></div>
       </div>
-      <div class="w-full max-w-lg py-6 z-20 border-2 border-gray-300 p-12 rounded-md shadow bg-white bg-opacity-90">
-        <div class="flex justify-center items-center h-auto w-auto my-4 mx-4">
+      <div class="w-full max-w-lg z-20 border-2 border-gray-300 rounded-md shadow bg-white bg-opacity-90">
+        <div class="flex justify-center items-center h-auto w-auto mt-12 mb-4 mx-4">
           <img src="assets/brand/esgeo_logo.webp" class="w-36" alt="">
         </div>
-        <div [hidden]="panelOpenState">
+        <div [hidden]="panelOpenState" class="text-md">
             <p class="text-center text-textColor-light mb-4">
                 Por favor, introduce usuario y contraseña
             </p>
-            <form [formGroup]="loginForm" (ngSubmit)="summit()" class="flex flex-col justify-center gap-4 max-w-md text-textColor px-8">
+            <form [formGroup]="loginForm" (ngSubmit)="summit()" class="flex flex-col justify-center gap-4 text-textColor px-8 text-md">
               <mat-form-field appearance="fill" class="">
-                <mat-label>Nombre de usuario</mat-label>
-                <input matInput placeholder="Email address" formControlName="email">
+                <mat-label>Correo electrónico</mat-label>
+                <input matInput placeholder="Introduzca su cuenta de usuario" formControlName="email" (change)="this.userInputMessage = ''">
                 <mat-error>Por favor, introduzca una cuenta válida</mat-error>
-              </mat-form-field>
+                <mat-error *ngIf="userInputMessage.length > 0">{{userInputMessage}}</mat-error>
+                <span>{{userInputMessage}}</span>
+                </mat-form-field>
               <mat-form-field appearance="fill" class="">
                 <mat-label>Contraseña</mat-label>
                 <input matInput placeholder="Password" formControlName="password" type="password" class="text-textColor">
                 <mat-error>Por favor, introduzca una contraseña válida</mat-error>
               </mat-form-field>
-              <button mat-raised-button [hidden]="panelOpenState" class="h-12 w-full items-center py-2 px-3 mb-4 font-medium text-center text-white bg-loginBtn rounded-lg hover:bg-loginBtn-dark">Login</button>
+              <p *ngIf="userPwdMessage" class="text-red-400 text-medium">{{userPwdMessage}}</p>
+              <p *ngIf="userDefaultErrorMessage" class="text-red-400 text-medium">{{userDefaultErrorMessage}}</p>
+
+              <button mat-raised-button [hidden]="panelOpenState" class="h-12 w-full items-center py-2 px-4 mb-4 text-center text-white bg-loginBtn rounded-lg hover:bg-loginBtn-dark">Login</button>
               <!-- <p class="text-center text-indigo-500">¿Has olvidado tu contraseña?</p> -->
             </form>
             <button mat-raised-button (click)="togglePwdRecovery()" [hidden]="panelOpenState" class="h-12 w-full mb-4 font-regular text-center text-indigo-500 bg-transparent hover:text-indigo-700">¿Has olvidado tu contraseña?</button>
         </div>
         <mat-accordion [hidden]="!panelOpenState" class="bg-white bg-opacity-90">
-          <mat-expansion-panel [expanded]="panelOpenState" class="noPadding">
-            <form [formGroup]="recoveryForm" (ngSubmit)="recovery()" class="flex flex-col max-w-md text-textColor">
+          <mat-expansion-panel [expanded]="panelOpenState" class="">
+            <form [formGroup]="recoveryForm" (ngSubmit)="recovery()" class="flex flex-col text-textColor">
               <p class="text-lg text-center text-textColor-light mb-4">Solicitar nueva contraseña
               </p>
-            <mat-form-field appearance="fill" class="py-4">
+            <mat-form-field appearance="fill" class="py-4 mb-4">
               <mat-label>Correo electrónico</mat-label>
               <input matInput placeholder="New Password" type="newPassword" formControlName="email" class="text-textColor">
               <mat-error>Por favor, introduzca una cuenta válida</mat-error>
               <mat-hint>Correo de electrónico de contacto</mat-hint>
             </mat-form-field>
-            <div class="gap-4">
+            <div class="flex flex-col gap-4">
               <button mat-raised-button class="bg-loginBtn h-12 w-full py-2 px-4 rounded-lg text-white hover:bg-loginBtn-dark">Solicitar nueva contraseña</button>
               <button (click)="togglePwdRecovery()" type="button" mat-raised-button class="h-12 w-full py-2 px-4 rounded-lg text-white bg-red-400 hover:bg-red-500">Cancelar</button>
             </div>

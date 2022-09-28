@@ -5,7 +5,7 @@ mat-accordion {
     background-color: transparent;
     border-bottom-color: transparent;
     border: 1px solid transparent;
-    padding: 10px;
+    // padding: 10px;
     box-shadow: 0;
 }
 mat-expansion-panel {
@@ -14,10 +14,4 @@ mat-expansion-panel {
     border: 1px solid transparent;
     padding: 10px;
     box-shadow: none !important;
-}
-mat-expansion-panel-body {
-    padding: 0px 0px 0px 0px !important;
-}
-.noPadding {
-    padding: 0px !important;
 }

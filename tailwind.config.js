@@ -9,11 +9,11 @@ module.exports = {
         colors: {
           corp: {
             DEFAULT: 'var(--color-primary)',
-            hover:  'var(--color-primary-dark)'
+            dark:  'var(--color-primary-dark)'
           },
           secondary: {
             DEFAULT: 'var(--color-secondary)',
-            hover:  'var(--color-secondary-dark)'
+            dark:  'var(--color-secondary-dark)'
           },
           textColor: {
             DEFAULT: '#777777',
