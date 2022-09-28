@@ -28,7 +28,7 @@ export class LoginComponent implements OnInit {
     password: new FormControl('', [Validators.required]),
   });
 
-  
+
   recoveryForm = new FormGroup({
     email: new FormControl('', [Validators.required, Validators.email]),
   });
@@ -54,19 +54,18 @@ export class LoginComponent implements OnInit {
         catchError(async (error) => {
           switch (error.code) {
             case 'auth/user-not-found':
-              this.userInputMessage = `No se ha encontrado usuario con la cuenta ${email}`
-              console.log(this.userInputMessage);
+              this.userInputMessage = `No se ha encontrado usuario con la cuenta ${email}`;
+              this.loginForm.controls['email'].setErrors({'incorrect': true});
               // this.toast.error(`No se ha encontrado usuario con la cuenta ${email}`);
               break;
             case 'auth/wrong-password':
               this.userPwdMessage ='Contraseña incorrecta';
-              console.log(this.userPwdMessage);
+              this.loginForm.controls['password'].setErrors({'incorrect': true});
               // this.toast.error(`Contraseña incorrecta`);
               break;
             default:
               // this.toast.error('Se ha producido un error');
               this.userDefaultErrorMessage = 'Se ha producido un error';
-              console.log(this.userDefaultErrorMessage);
           }
         })
       )

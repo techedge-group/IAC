@@ -19,16 +19,13 @@
               <mat-form-field appearance="fill" class="">
                 <mat-label>Correo electrónico</mat-label>
                 <input matInput placeholder="Introduzca su cuenta de usuario" formControlName="email" (change)="this.userInputMessage = ''">
-                <mat-error>Por favor, introduzca una cuenta válida</mat-error>
-                <mat-error *ngIf="userInputMessage.length > 0">{{userInputMessage}}</mat-error>
-                <span>{{userInputMessage}}</span>
+                <mat-error>{{userInputMessage}}</mat-error>
                 </mat-form-field>
               <mat-form-field appearance="fill" class="">
                 <mat-label>Contraseña</mat-label>
                 <input matInput placeholder="Password" formControlName="password" type="password" class="text-textColor">
                 <mat-error>Por favor, introduzca una contraseña válida</mat-error>
               </mat-form-field>
-              <p *ngIf="userPwdMessage" class="text-red-400 text-medium">{{userPwdMessage}}</p>
               <p *ngIf="userDefaultErrorMessage" class="text-red-400 text-medium">{{userDefaultErrorMessage}}</p>
 
               <button mat-raised-button [hidden]="panelOpenState" class="h-12 w-full items-center py-2 px-4 mb-4 text-center text-white bg-loginBtn rounded-lg hover:bg-loginBtn-dark">Login</button>
@@ -54,7 +51,7 @@
             </form>
           </mat-expansion-panel>
         </mat-accordion>
-      </div>  
+      </div>
     </div>
 </section>
 
