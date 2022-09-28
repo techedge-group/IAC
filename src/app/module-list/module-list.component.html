@@ -1,14 +1,14 @@
 <div class="container mx-auto md:mb-24">
-    <div class="w-full h-auto flex-col justify-center items-center gap-8 p-4 mt-12 md:mt-24 md:mb-8 md:p-0">
+    <div class="w-full h-auto flex-col justify-center items-center gap-8 p-4 mt-12 md:mt-24 md:mb-8">
         <img class="h-8 w-8 mb-4 md:h-12 md:w-12" src="assets/brand/Emoji.png" alt="">
-        <p *ngIf="user$ | async as user" class="font-bold text-textColor-dark text-3xl md:text-4xl">¡Bienvenido, {{username}}!</p>
+        <p *ngIf="user$ | async as user" class="font-bold text-textColor-dark text-3xl md:text-4xl">Bienvenido <span *ngIf="displayName">{{displayName}}</span></p>
     </div>
-    <div class="p-5 md:p-0">
+    <div class="p-5">
         <p class="m-description md:text-xl">Listado de Sesiones ({{this.count}})</p>
         <div class="h-auto grid grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 lg:gap-4 xl:w-10/12">
             <!-- LISTADO SESIONES  -->
             <div *ngFor="let session of sessions" class="max-w-sm bg-white rounded-lg border shadow-md border-gray-200">
-                <img class="rounded-t-lg bg-local w-full" src="{{session.cardImage}}" alt="" />
+                <img class="rounded-t-lg bg-fixed w-full" src="{{session.cardImage}}" alt="" />
                 <div class="p-5">
                     <h5 class="mb-2 m-text text-textColor-light">{{session.number}}</h5>
                     <h5 class="mb-2 m-subtitle">{{session.title}}</h5>
@@ -23,7 +23,7 @@
                             <p class="text-md">{{session.docsCount}}</p>
                         </div>
                     </div>
-                    <a href="" [routerLink]="['/session', session.id]"  class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-secondary rounded-lg">
+                    <a href="" [routerLink]="['/session', session.id]"  class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-secondary rounded-lg hover:bg-secondary-dark">
                         Ir al módulo
                         <svg class="ml-2 -mr-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
                     </a>
