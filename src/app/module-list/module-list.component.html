@@ -1,9 +1,9 @@
 <div class="container mx-auto md:mb-24">
-    <div class="w-full h-auto flex-col justify-center items-center gap-8 p-4 mt-12 md:mt-24 md:mb-8 md:p-0">
+    <div class="w-full h-auto flex-col justify-center items-center gap-8 p-4 mt-12 md:mt-24 md:mb-8">
         <img class="h-8 w-8 mb-4 md:h-12 md:w-12" src="assets/brand/Emoji.png" alt="">
         <p *ngIf="user$ | async as user" class="font-bold text-textColor-dark text-3xl md:text-4xl">Bienvenido <span *ngIf="displayName">{{displayName}}</span></p>
     </div>
-    <div class="p-5 md:p-0">
+    <div class="p-5">
         <p class="m-description md:text-xl">Listado de Sesiones ({{this.count}})</p>
         <div class="h-auto grid grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 lg:gap-4 xl:w-10/12">
             <!-- LISTADO SESIONES  -->
