@@ -8,7 +8,7 @@
         <div class="h-auto grid grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 lg:gap-4 xl:w-10/12">
             <!-- LISTADO SESIONES  -->
             <div *ngFor="let session of sessions" class="max-w-sm bg-white rounded-lg border shadow-md border-gray-200">
-                <img class="rounded-t-lg bg-local w-full" src="{{session.cardImage}}" alt="" />
+                <img class="rounded-t-lg bg-fixed w-full" src="{{session.cardImage}}" alt="" />
                 <div class="p-5">
                     <h5 class="mb-2 m-text text-textColor-light">{{session.number}}</h5>
                     <h5 class="mb-2 m-subtitle">{{session.title}}</h5>

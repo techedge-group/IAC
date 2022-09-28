@@ -27,7 +27,7 @@ module.exports = {
           gray: '#363839',
           loginBtn: {
             DEFAULT: '#045B62',
-            dark: '#043E43'
+            dark: '#0A5056'
           }
         },
         fontFamily: {
