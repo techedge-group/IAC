@@ -9,11 +9,11 @@ module.exports = {
         colors: {
           corp: {
             DEFAULT: 'var(--color-primary)',
-            hover:  'var(--color-primary-dark)'
+            dark:  'var(--color-primary-dark)'
           },
           secondary: {
             DEFAULT: 'var(--color-secondary)',
-            hover:  'var(--color-secondary-dark)'
+            dark:  'var(--color-secondary-dark)'
           },
           textColor: {
             DEFAULT: '#777777',
@@ -27,7 +27,7 @@ module.exports = {
           gray: '#363839',
           loginBtn: {
             DEFAULT: '#045B62',
-            dark: '#043E43'
+            dark: '#0A5056'
           }
         },
         fontFamily: {

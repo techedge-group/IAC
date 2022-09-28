@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Auth, authState } from '@angular/fire/auth';
-import { signInWithEmailAndPassword, sendPasswordResetEmail } from '@firebase/auth';
+import { Auth, authState, sendPasswordResetEmail, signInWithEmailAndPassword } from '@angular/fire/auth';
 import { from } from 'rxjs';
 
 @Injectable({
