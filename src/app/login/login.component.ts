@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { FormControl, FormGroup, Validators, FormBuilder } from '@angular/forms';
 import { Router } from '@angular/router';
 import { AuthenticationService } from '../services/authentication.service';
 import { HotToastService } from '@ngneat/hot-toast';
@@ -23,25 +23,32 @@ export class LoginComponent implements OnInit {
   userPwdMessage:string = '';
   userDefaultErrorMessage:string = '';
 
-  loginForm = new FormGroup({
-    email: new FormControl('', [Validators.required, Validators.email]),
-    password: new FormControl('', [Validators.required]),
-  });
+  loginForm:FormGroup = new FormGroup({});
+  submitted: boolean = false;
 
 
   recoveryForm = new FormGroup({
-    email: new FormControl('', [Validators.required, Validators.email]),
+    email: new FormControl('', [Validators.required, Validators.email,]),
   });
 
   constructor(
     public router: Router,
     private authService: AuthenticationService,
     private toast: HotToastService,
-    public expansion: MatExpansionModule
+    public expansion: MatExpansionModule,
+    private formBuilder: FormBuilder
   ) {}
 
   ngOnInit(): void {
+    this.loginForm = this.formBuilder.group({
+      email: new FormControl('', [Validators.required, Validators.email]),
+      password: new FormControl('', [Validators.required]),
+    });
   }
+  get f() {
+    return this.loginForm.controls;
+  } 
+
 
   summit() {
     if (!this.loginForm.valid) {
@@ -61,13 +68,14 @@ export class LoginComponent implements OnInit {
             case 'auth/wrong-password':
               this.userPwdMessage ='Contraseña incorrecta';
               this.loginForm.controls['password'].setErrors({'incorrect': true});
-              // this.toast.error(`Contraseña incorrecta`);
+              // this.toast.error(`Contraseña incorrecta`); 
               break;
             default:
               // this.toast.error('Se ha producido un error');
               this.userDefaultErrorMessage = 'Se ha producido un error';
           }
         })
+
       )
       .subscribe((data) => {
         if (data !== undefined) {
@@ -114,3 +122,8 @@ export class LoginComponent implements OnInit {
   //   }
   // };
 }
+
+
+
+
+  

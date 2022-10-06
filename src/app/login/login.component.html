@@ -15,10 +15,13 @@
             <p class="text-center text-textColor-light mb-4">
                 Por favor, introduce usuario y contraseña
             </p>
-            <form [formGroup]="loginForm" (ngSubmit)="summit()" class="flex flex-col justify-center gap-4 text-textColor px-8 text-md">
+            <form [formGroup]="loginForm"  (ngSubmit)="summit()" class="flex flex-col justify-center gap-4 text-textColor px-8 text-md">
               <mat-form-field appearance="fill" class="">
                 <mat-label>Correo electrónico</mat-label>
-                <input matInput placeholder="Introduzca su cuenta de usuario" formControlName="email" (change)="this.userInputMessage = ''">
+                <input matInput placeholder="Introduzca su cuenta de usuario" formControlName="email" (change)="this.userInputMessage = ''"
+                type="text"
+              />
+                <mat-error *ngIf="loginForm.value.email.includes(' ')">No se aceptan espacios en blanco</mat-error>
                 <mat-error>{{userInputMessage}}</mat-error>
                 </mat-form-field>
               <mat-form-field appearance="fill" class="">
@@ -41,7 +44,8 @@
             <mat-form-field appearance="fill" class="py-4 mb-4">
               <mat-label>Correo electrónico</mat-label>
               <input matInput placeholder="New Password" type="newPassword" formControlName="email" class="text-textColor">
-              <mat-error>Por favor, introduzca una cuenta válida</mat-error>
+              <mat-error *ngIf="recoveryForm.value.email.includes(' ')">No se aceptan espacios en blanco</mat-error>
+              <mat-error>{{userInputMessage}}</mat-error>
               <mat-hint>Correo de electrónico de contacto</mat-hint>
             </mat-form-field>
             <div class="flex flex-col gap-4">
