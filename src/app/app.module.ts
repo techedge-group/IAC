@@ -13,7 +13,7 @@ import { NavComponent } from './nav/nav.component';
 import { FooterComponent } from './footer/footer.component';
 import { LoginComponent } from './login/login.component';
 import { ContactComponent } from './contact/contact.component';
-import { ReactiveFormsModule } from '@angular/forms';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { HttpClientModule } from "@angular/common/http";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatFormFieldModule } from '@angular/material/form-field';
@@ -24,6 +24,7 @@ import { environment } from '../environments/environment';
 import { provideAuth, getAuth } from '@angular/fire/auth';
 import { HotToastModule } from '@ngneat/hot-toast';
 import { MatExpansionModule } from '@angular/material/expansion';
+
 
 
 
@@ -44,6 +45,7 @@ import { MatExpansionModule } from '@angular/material/expansion';
     provideFirebaseApp(() => initializeApp(environment.firebase)),
 
     ReactiveFormsModule,
+    FormsModule,
     HttpClientModule,
     AppRoutingModule,
     MatFormFieldModule,
